@@ -6,6 +6,8 @@ export { default as MCardbox2 } from "./missionCardbox/MCardbox2/MCardbox2";
 export { default as MCardbox3 } from "./missionCardbox/MCardbox3/MCardbox3";
 export { default as CircleImg } from "./circleImg/CircleImg";
 export { default as SidebtnC } from "./sidebtn/Sidebtn";
+export { default as Selecter } from "./selector/Selector";
+
 export { default as BottomEye } from "./common/sideEyecomponents/bottomEye/BottomEye";
 export { default as SinglebEye } from "./common/sideEyecomponents/singleBottomeye/SingleBEye";
 export { default as Righteye } from "./common/sideEyecomponents/rightEye/Righteye";

@@ -12,12 +12,7 @@ import { Iphoto16, Iphoto17, Iphoto18 } from "../../../assets";
 
 const Hprocurement = () => {
   return (
-    <div
-      className={styles.mainContainer}
-      style={{
-        backgroundImage: "url(./../../../assets/servicesAssets/iphotobg4.svg)",
-      }}
-    >
+    <>
       <div className={styles.Hprocurement_container}>
         <SidebtnC />
         <div className={styles.Hprocurement_container_content}>
@@ -120,7 +115,7 @@ const Hprocurement = () => {
       </div>
       {/* **************** Footer Component **************** */}
       <Footer />
-    </div>
+    </>
   );
 };
 

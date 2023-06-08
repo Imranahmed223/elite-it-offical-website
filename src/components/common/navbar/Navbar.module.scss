@@ -9,6 +9,8 @@
     cursor: pointer;
   }
   &_menu {
+    display: flex;
+    align-items: center;
     & > *:not(:last-child) {
       margin-right: 72px;
     }

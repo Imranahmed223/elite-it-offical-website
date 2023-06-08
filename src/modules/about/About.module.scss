@@ -3,7 +3,7 @@
 
 .about_header_container {
   position: relative;
-  padding: 57px 0px;
+  padding: 3rem 0rem;
   // background-color: aqua;
   height: auto;
   background-image: url("../../assets/aboutAssets/abg1.svg");
@@ -42,7 +42,7 @@
         width: 58.6rem;
         padding: 0.5rem 0rem;
         // background-color: aqua;
-        margin-top: 123px;
+        margin-top: 90px;
         p {
           font-family: "Poppins";
           font-style: normal;
@@ -55,7 +55,7 @@
         }
       }
       &_right {
-        margin-bottom: -11rem;
+        margin-bottom: -10rem;
         // background-color: #0000c8;
       }
     }

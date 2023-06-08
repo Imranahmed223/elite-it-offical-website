@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./Networking.module.scss";
-import { Navbar, RightsideEye, SidebtnC } from "../../../components";
-import { Iphoto3 } from "../../../assets";
+import {
+  Footer,
+  Navbar,
+  RightsideEye,
+  SidebtnC,
+  SinglebEye,
+} from "../../../components";
+import { Iphoto21, Iphoto3 } from "../../../assets";
 
 const Networking = () => {
   return (
@@ -49,7 +55,7 @@ const Networking = () => {
       <div className={styles.monitoring_container}>
         <div className={styles.monitoring_container_content}>
           <div className={styles.monitoring_container_content_left}>
-            <h1 className="primary_heading">Network onitoring</h1>
+            <h1 className="primary_heading">Network Monitoring</h1>
             <p className="primary_para">
               A network monitoring system is a tool that helps ensure the smooth
               operation of an organisation's IT and network infrastructure. It
@@ -72,6 +78,51 @@ const Networking = () => {
           </div>
         </div>
       </div>
+      {/* **************** Network Security **************** */}
+      <div className={styles.security_container}>
+        <div className={styles.security_container_content}>
+          <div className={styles.security_container_content_left}>
+            <SinglebEye
+              length="1023px"
+              para="Network security is an essential aspect of overall cyber security that helps to ensure the continued success and security of a business. This is especially important in today's digital landscape, where data breaches and other security incidents can have costly consequences. A well-designed network security solution can help to reduce overhead expenses and protect organisations from losses resulting from data breaches or other security incidents. It allows for the proper authorization of access to systems, applications, and data, which enables business operations and the delivery of products and services to customers. Additionally, a strong network security solution ensures reliable access and performance, as well as protection from cyber threats. "
+              Iphoto={Iphoto21}
+            />
+          </div>
+          <div className={styles.security_container_content_right}>
+            <h1 className="primary_heading">Network Security</h1>
+            <p className="primary_para">
+              There are various components that go into a comprehensive network
+              security solution. For example, integrating with Identity and
+              Access Management (IAM) products can help to strongly identify
+              users, and role-based Access Control policies can ensure that
+              individuals and devices are authorised to access certain assets.
+              Threat control involves preventing bad actors from causing damage
+              within an organisation's networks. This is accomplished through
+              the use of technologies like firewalls and load balancers, which
+              protect the network from DoS/DDoS attacks and other threats.
+            </p>
+            <p className="primary_para">
+              Network security is all about securing the various points of a
+              network to prevent any kind of misuse or illegal access. This is
+              especially important for private networks within a company, as
+              data breaches can lead to problems such as identity theft,
+              reputational damage, and stolen assets. To effectively protect
+              against these threats, it is important to work with experienced IT
+              experts who can implement various security and control layers. At
+              Elite IT, we offer a range of solutions using field-proven
+              software security solutions and IT hardware from trusted suppliers
+              like Cisco, DrayTek, CrowdStrike, and Sophos. This includes
+              everything from firewalls to anti-ransomware to next-generation
+              endpoint protection. With decades of combined experience in
+              delivering IT, data, and network security services and
+              consultancy, our team is well-equipped to help keep your business
+              secure in today's constantly evolving threat landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* **************** Footer Component **************** */}
+      <Footer />
     </>
   );
 };

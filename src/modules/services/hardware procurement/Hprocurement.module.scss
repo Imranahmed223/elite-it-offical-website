@@ -1,23 +1,16 @@
 @import "../../../Sass/mixin";
 @import "../../../Sass/variables";
 
-.mainContainer{
-  background-image: url(./../../../assets/download.jpeg);
-  background-size: cover;
-  width:100%;
-  height: 100%;
-  background-repeat: no-repeat;
-}
 .Hprocurement_container {
   padding: 3rem 0rem;
-//   background-image: url("../../../assets/servicesAssets/iphotobg4.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: end;
+  background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+
   //   background-color: aqua;
-  // background-color: red;
   &_content {
     // background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
-    // background-color: red;
     &_top {
       width: 75%;
       margin: auto;

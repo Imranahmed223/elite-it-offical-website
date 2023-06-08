@@ -29,9 +29,24 @@ import Iphoto17 from "./servicesAssets/iphoto17.svg";
 import Iphoto18 from "./servicesAssets/iphoto18.svg";
 import Iphoto19 from "./servicesAssets/iphoto19.svg";
 import Iphoto20 from "./servicesAssets/iphoto20.svg";
+import Iphoto21 from "./servicesAssets/iphoto21.svg";
+import Iphoto22 from "./servicesAssets/iphoto22.svg";
+import Iphoto23 from "./servicesAssets/iphoto23.svg";
+import Iphoto24 from "./servicesAssets/iphoto24.svg";
+import Iphoto25 from "./servicesAssets/iphoto25.svg";
+import Iphoto26 from "./servicesAssets/iphoto26.svg";
+import Iphoto27 from "./servicesAssets/iphoto27.svg";
+import Iphoto28 from "./servicesAssets/iphoto28.svg";
+import Iphoto29 from "./servicesAssets/iphoto29.svg";
+import Iphoto30 from "./servicesAssets/iphoto30.svg";
+import Iphoto31 from "./servicesAssets/iphoto31.svg";
+import Iphoto32 from "./servicesAssets/iphoto32.svg";
+import Iphoto33 from "./servicesAssets/iphoto33.svg";
+import Iphoto34 from "./servicesAssets/iphoto34.svg";
 import Iphotobg1 from "./servicesAssets/iphotobg1.svg";
 import Iphotobg3 from "./servicesAssets/iphotobg3.svg";
 import Iphotobg4 from "./servicesAssets/singleRbg.svg";
+import Arrowdown from "./workAssets/arrowdown.svg";
 
 export {
   Logo,
@@ -68,4 +83,19 @@ export {
   Iphoto18,
   Iphoto19,
   Iphoto20,
+  Iphoto21,
+  Iphoto22,
+  Iphoto23,
+  Iphoto24,
+  Iphoto25,
+  Iphoto26,
+  Iphoto27,
+  Iphoto28,
+  Iphoto29,
+  Iphoto30,
+  Iphoto31,
+  Iphoto32,
+  Iphoto33,
+  Iphoto34,
+  Arrowdown,
 };

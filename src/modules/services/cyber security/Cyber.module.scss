@@ -1,0 +1,187 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.cyber_section {
+  padding: 3rem 0rem;
+  &_content {
+    background-image: url("../../../assets/servicesAssets/singlebwl.png");
+    background-repeat: no-repeat;
+    background-position: end;
+    background-size: cover;
+    &_top {
+      width: 75%;
+      margin: auto;
+    }
+    &_middle {
+      margin-top: 141px;
+    }
+    &_bottom {
+      padding: 2rem 0rem;
+      //   background-color: lightcoral;
+    }
+  }
+}
+// ************* Cyber Security container ************************
+
+.cybersecurity_container {
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.6rem;
+      margin-top: -4rem;
+      ul {
+        list-style-position: inside;
+      }
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      width: 42.2rem;
+    }
+  }
+}
+
+// ************* PC Protection Container ************************
+
+.pc_container {
+  margin-top: 65px;
+  position: relative;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    &_left {
+      width: 61.2rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      position: absolute;
+      z-index: 9999;
+      right: 0%;
+      top: 20%;
+      // background-color: palevioletred;
+    }
+  }
+}
+
+// ************* Penetration Container ************************
+
+.penetration_container {
+  padding: 0.5rem 0rem;
+  margin-top: 120px;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      //   margin-top: 1rem;
+    }
+    &_right {
+      width: 61.2rem;
+    }
+  }
+}
+// ************* Filtering Container ************************
+.filter {
+  margin-top: 10.5rem;
+  .filtering_container {
+    width: 75%;
+    margin: auto;
+    &_content {
+      width: 58.6rem;
+    }
+  }
+}
+
+// ************* Mobile Device Management ************************
+
+.mobile_device {
+  margin-top: 10.5rem;
+  position: relative;
+  padding: 5rem 0rem;
+  // background-color: aqua;
+  &_content {
+    padding: 1rem 0rem;
+    // background-color: red;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    &_left {
+      position: absolute;
+      z-index: 9999;
+      left: 0%;
+      top: 5%;
+      padding: 1rem 0rem;
+      // background-color: palevioletred;
+      &_bgbox {
+        width: 30.9rem;
+        height: 25.9rem;
+        background-image: $grdient;
+      }
+    }
+    &_right {
+      padding: 1rem 0rem;
+      // background-color: lightblue;
+
+      width: 61.2rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+// ************* Security Audit ************************
+
+.securityAudit {
+  padding: 3rem 0rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 12rem;
+    }
+    &_left {
+      width: 58.4rem;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      ul {
+        list-style-position: inside;
+      }
+    }
+  }
+}
+
+// ************* Disaster Recovery ************************
+
+.disaster_container {
+  padding: 3rem 0rem;
+  margin-top: 5rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 12rem;
+    }
+  }
+}

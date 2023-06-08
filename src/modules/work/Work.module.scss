@@ -1,0 +1,33 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.work_container {
+  padding: 3rem 0rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    &_middle {
+      margin-top: 16.2rem;
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.1rem;
+        line-height: 90px;
+        text-align: center;
+        color: #212427;
+      }
+    }
+    &_bottom {
+      width: 70%;
+      margin: auto;
+      margin-top: 5.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &>*:not(:first-child){
+        margin-top: 4rem;
+      }
+    }
+  }
+}

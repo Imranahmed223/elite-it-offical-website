@@ -3,7 +3,7 @@
 
 //* **************** Section1 **************** *
 .web_container {
-  padding-top: 30px;
+  padding-top: 3rem;
   padding-bottom: 123px;
   //   background-color: aqua;
   background-image: url("../../../assets/servicesAssets//sbg1.svg");
@@ -13,7 +13,7 @@
   &_content {
     width: 75%;
     margin: auto;
-    padding: 10px 0px;
+    // padding: 10px 0px;
     // background-color: lightcoral;
     //* **************** Section2 **************** *
 
@@ -41,6 +41,7 @@
 
     &_section3 {
       margin-top: 72px;
+      // background-color: red;
       h1 {
         font-family: "Poppins";
         font-style: normal;
@@ -53,7 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -10px;
+        margin-top: -16px;
         & > *:not(:first-child) {
           margin-left: 120px;
         }

@@ -1,0 +1,216 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.hosted_container {
+  padding: 3rem 0rem;
+    background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  //   background-color: aqua;
+  &_content {
+    &_top {
+      width: 75%;
+      margin: auto;
+    }
+    &_middle {
+      width: 75%;
+      margin: auto;
+      margin-top: 141px;
+    }
+    &_bottom {
+      margin-top: 132px;
+      padding: 3rem 0rem;
+      background-image: $grdient;
+      // background-color: e: cover;
+      &_content {
+        padding: 2rem 0rem;
+        width: 75%;
+        margin: auto;
+        & > *:not(:first-child) {
+          margin-top: 25px;
+        }
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 32px;
+          /* or 178% */
+          text-align: justify;
+          letter-spacing: -0.03em;
+          /* WHITE */
+          color: #fafafa;
+        }
+      }
+    }
+  }
+}
+
+// ************* Cloud Solutions ************************
+
+.cloud_container {
+  margin-top: 65px;
+  position: relative;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    &_left {
+      width: 61.2rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      position: absolute;
+      z-index: 9999;
+      right: 0%;
+      top: 20%;
+      // background-color: palevioletred;
+    }
+  }
+}
+
+// ********************* Application Virtualisation ****************
+.virtualisation {
+  margin-top: 6.5rem;
+  padding: 8rem 0rem;
+  // background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 90px;
+    /* identical to box height, or 280% */
+    text-align: center;
+    color: #212427;
+  }
+  &_content {
+    margin-top: -3rem;
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      //   background-color: aqua;
+      &_left {
+      }
+      &_right {
+        width: 108.6rem;
+        height: 34rem;
+        // z-index: 9999;
+        margin-left: -220px;
+        // background-image: url("../../../assets/servicesAssets/iphotobg4.svg");
+        // background-color: aqua;
+        background-image: $grdient;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_para {
+          width: 58.6rem;
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            /* or 178% */
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #fafafa;
+          }
+        }
+      }
+    }
+    &_bottom {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: right;
+      // padding: 1rem 0rem;
+      // background-color: aqua;
+      &_right {
+        margin-right: 7rem;
+        width: 58.1rem;
+        padding: 0.5rem 0rem;
+        // background-color: lightcoral;
+      }
+    }
+  }
+}
+// ************* Destop Virtualisation ************************
+
+.desktop_container {
+  margin-top: 6.5rem;
+  position: relative;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    &_left {
+      width: 61.2rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      position: absolute;
+      z-index: 9999;
+      right: 0%;
+      top: 20%;
+      // background-color: palevioletred;
+    }
+  }
+}
+
+// ************* Destop Virtualisation ************************
+
+.hard_virtual {
+  margin-top: 10.5rem;
+  position: relative;
+  padding: 5rem 0rem;
+  // background-color: aqua;
+  &_content {
+    padding: 1rem 0rem;
+    // background-color: red;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    &_left {
+      position: absolute;
+      z-index: 9999;
+      left: 0%;
+      top: 5%;
+      padding: 1rem 0rem;
+      // background-color: palevioletred;
+      &_bgbox {
+        width: 30.9rem;
+        height: 25.9rem;
+        background-image: $grdient;
+      }
+    }
+    &_right {
+      padding: 1rem 0rem;
+      // background-color: lightblue;
+      
+      width: 61.2rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+// ************* AWS Servers ************************
+.aws_container{
+   &_content {
+        width: 75%;
+        margin: auto;
+        p {
+          width: 58.2rem;
+          margin-top: -5rem;
+        }
+      }
+}

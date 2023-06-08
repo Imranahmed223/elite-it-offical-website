@@ -21,22 +21,24 @@
       color: $textprimary;
     }
     &_innercontent {
-      margin-top: -40px;
+      // margin-top: -40px;
       display: flex;
       align-items: center;
       justify-content: center;
       &_left {
         width: 108.6rem;
-        height: 34rem;
+        height: auto;
         // z-index: 9999;
         margin-left: -190px;
-        background-image: url("../../../../assets/servicesAssets/iphotobg2.svg");
-        background-repeat: no-repeat;
+        // margin-top: 4rem;
+        background-image: $grdient;
+        border-radius: 0rem 3rem 3rem 0rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 1.5rem 0rem;
         div {
-          padding: 3rem 0rem;
+          padding: 1rem 0rem;
           // background-color: red;
           margin-left: -110px;
           p {

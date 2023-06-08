@@ -1,0 +1,201 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.avr_container {
+  padding: 3rem 0rem;
+  background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &_content {
+    &_top {
+      width: 75%;
+      margin: auto;
+    }
+    &_middle {
+      margin-top: 141px;
+    }
+    &_bottom {
+      margin-top: 132px;
+      padding: 3rem 0rem;
+      background-image: $grdient;
+      &_content {
+        width: 75%;
+        margin: auto;
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        & > *:not(:first-child) {
+          margin-left: 7rem;
+        }
+        &_left {
+          padding: 0.5rem 0rem;
+          //   background-color: aquamarine;
+          width: 50.7rem;
+          & > *:not(:first-child) {
+            margin-top: 2.5rem;
+          }
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #fafafa;
+          }
+        }
+        &_right {
+          padding: 0.5rem 0rem;
+          //   background-color: palevioletred;
+          width: 50.7rem;
+          & > *:not(:first-child) {
+            margin-top: 2.5rem;
+          }
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #fafafa;
+          }
+        }
+      }
+      &_vrbox {
+        width: 75%;
+        margin: auto;
+        margin-top: 5.4rem;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.46) 0%,
+          rgba(255, 255, 255, 0.184) 100%
+        );
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(15px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 30px;
+        padding: 3rem;
+        margin-bottom: -9rem;
+        p {
+          width: 90%;
+          margin: auto;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.7rem;
+          line-height: 44px;
+          text-align: center;
+          color: #fafafa;
+        }
+        h1 {
+          font-family: "Archivo Black";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 4.1rem;
+          line-height: 60px;
+          text-align: center;
+          color: #0000c8;
+        }
+      }
+    }
+  }
+}
+// ********************* Outsourced Container ****************
+
+.augmented_container {
+  width: 75%;
+  margin: auto;
+  margin-top: 15rem;
+  padding: 3rem 0rem;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.4rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+// ********************* Virtual Reality ****************
+
+.virtual_container {
+  width: 75%;
+  margin: auto;
+  margin-top: 10rem;
+  padding: 2rem 0rem;
+  &_content {
+    display: flex;
+    & > *:not(:first-child) {
+      margin-left: 10rem;
+    }
+    &_left {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      &_bgbox {
+        width: 412px;
+        height: 1060px;
+        padding: 3rem;
+        background-image: $grdient;
+        border-radius: 3rem;
+        ul {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          list-style-position: inside;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #fafafa;
+          li {
+            margin-top: 2rem;
+          }
+        }
+      }
+      &_circlebox {
+        margin-top: -20rem;
+      }
+    }
+    &_right {
+      width: 58.2rem;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+
+// ********************* Virtual Reality section2 ****************
+
+.vr_container{
+    width: 75%;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 3rem 0rem;
+    &_content{
+        display: flex;
+        justify-content: center;
+        &>*:not(:first-child){
+            margin-left: 10rem;
+        }
+        &_left{
+            width: 61.6rem;
+            &>*:not(:first-child){
+                margin-top: 2.5rem;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 @import "../../../Sass/variables";
 
 .itsupport_container {
-  padding: 30px;
+  padding: 3rem 0rem;
   background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
   background-repeat: no-repeat;
   background-position: end;
@@ -11,7 +11,7 @@
     position: relative;
     width: 75%;
     margin: auto;
-    padding: 0.5rem 0rem;
+    // padding: 0.5rem 0rem;
     // background-color: lightblue;
     &_middle {
       margin-top: 141px;

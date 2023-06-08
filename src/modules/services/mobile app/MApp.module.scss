@@ -1,0 +1,151 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.app_container {
+  padding: 3rem 0rem;
+  &_content {
+    background-image: url("../../../assets/servicesAssets/singlebwl.png");
+    background-repeat: no-repeat;
+    background-position: end;
+    background-size: cover;
+    &_top {
+      width: 75%;
+      margin: auto;
+    }
+    &_middle {
+      width: 65%;
+      margin: auto;
+      margin-top: 141px;
+    }
+    &_bottom {
+      padding: 2rem 0rem;
+      //   background-color: lightcoral;
+    }
+  }
+}
+// ************* Mobile App Design ************************
+
+.mobileApp_container {
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.6rem;
+      margin-top: -4rem;
+
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      width: 42.2rem;
+    }
+  }
+}
+// ************* Mobile App Development Services ************************
+
+.d_services {
+  padding: 3rem 0rem;
+  width: 75%;
+  margin: auto;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 10rem;
+    }
+    &_right {
+      width: 58.8rem;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+    }
+    &_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_circlebox {
+        z-index: 9999;
+        margin-bottom: -25rem;
+      }
+      &_bgbox {
+        width: 393px;
+        height: 1086px;
+        padding: 2.5rem;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: $grdient;
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+        }
+        p,
+        ul {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          list-style-position: inside;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #fafafa;
+          // align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+// ********************* Native Apps for IOS & Android ****************
+
+.nativeApps {
+  width: 75%;
+  margin: auto;
+  margin-top: 10rem;
+  padding: 2rem 0rem;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.4rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+// ************* Cross-Platform Apps ************************
+
+.crossPlatform {
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.6rem;
+      margin-top: -4rem;
+
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &_right {
+      width: 42.2rem;
+    }
+  }
+}

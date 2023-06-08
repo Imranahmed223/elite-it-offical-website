@@ -1,10 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { Logo } from "../../../assets";
 import { Link, useNavigate } from "react-router-dom";
+import { Selecter } from "../..";
 
 const Navbar = () => {
+  const [dropDown, setDropDown] = useState("Services");
+
   const navigate = useNavigate();
+  const dropdownData = [
+    {
+      id: 1,
+      path: "/web",
+      title: "Web Development",
+    },
+
+    {
+      path: "/itsupport",
+      title: "IT Support",
+    },
+    {
+      path: "/procurement",
+      title: "Hardware & Software Procurement",
+    },
+    {
+      path: "/voip",
+      title: "VOIP",
+    },
+    {
+      path: "/hosted",
+      title: "Hosted Services and Virtualization",
+    },
+    {
+      path: "/networking",
+      title: "Networking & Wifi",
+    },
+    {
+      path: "/cyber",
+      title: "Cyber Security",
+    },
+    {
+      path: "/mobileapp",
+      title: "Mobile App Development Services",
+    },
+    {
+      path: "/arvr",
+      title: "AR/VR",
+    },
+    {
+      path: "/cctv",
+      title: "CCTV & DOOR Access",
+    },
+  ];
   return (
     <>
       <div className={styles.navbar_container}>
@@ -12,22 +59,9 @@ const Navbar = () => {
         <div className={styles.navbar_container_menu}>
           <button onClick={() => navigate("/")}>Home</button>
           <button onClick={() => navigate("/about")}>About</button>
-          <select>
-            <option value="1">Services</option>
 
-            <option value="2">Web Development</option>
-
-            <option value="3">IT Support</option>
-            <option value="4">Hardware & Software Procurement</option>
-            <option value="5">VOIP Broadband</option>
-            <option value="6">Hosted Services and Virtualization</option>
-            <option value="7">Networking & Wifi</option>
-            <option value="8">Cyber Security</option>
-            <option value="9">Mobile App Development Services</option>
-            <option value="10">AR/VR</option>
-            <option value="11">CCTV & DOOR Access</option>
-          </select>
-          <button>Work</button>
+          <Selecter className="editselector" data={dropdownData} />
+          <button onClick={() => navigate("/work")}>Work</button>
           <button>Blogs</button>
           <button>Careers</button>
         </div>

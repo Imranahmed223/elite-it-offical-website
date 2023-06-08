@@ -1,0 +1,59 @@
+// @import "../../scss/variable";
+@import "../../Sass/variables";
+.editselector {
+  margin: 2rem 0rem;
+  &-container {
+    position: relative;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      // border-bottom: 1.5px solid red;
+      cursor: pointer;
+      & > h6 {
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: "Poppins";
+        color: $textprimary;
+      }
+      &-icon {
+        & > * {
+          padding-top: 0.6rem;
+          font-size: 2.2rem;
+          color: $textprimary;
+        }
+      }
+    }
+
+    // Menus
+    &-menus {
+      margin-top: 0.5rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      position: absolute;
+      width: 32rem;
+      z-index: 1000000;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      &-content {
+        padding: 1rem;
+        & > * {
+          color: $textprimary;
+        }
+        &-item {
+          // span {
+          padding: 1rem 1rem;
+
+          font-size: 1.6rem;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            border-radius: 1rem;
+            background-color: lightgray;
+            // color: green;
+          }
+          // }
+        }
+      }
+    }
+  }
+}

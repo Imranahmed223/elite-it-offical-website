@@ -1,0 +1,130 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+@import "../../../Sass/StylesCom";
+
+.cctv_container {
+  padding: 3rem 0rem;
+  background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+  &_content {
+    &_top {
+      width: 75%;
+      margin: auto;
+    }
+    &_middle {
+      margin-top: 145px;
+    }
+    &_bottom {
+      margin-top: 145px;
+      padding: 5rem 0rem;
+      background-image: $grdient;
+      &_content {
+        width: 70%;
+        margin: auto;
+
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+        }
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #fafafa;
+        }
+      }
+    }
+  }
+}
+// ********************* CCTV System ****************
+.cctv_system {
+  padding: 3rem 0rem;
+  margin-top: 5rem;
+  position: relative;
+  &_content {
+    width: 75%;
+    margin: auto;
+
+    &_left {
+      width: 58.6rem;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 20%;
+      right: 0%;
+      &_bgbox {
+        width: 40rem;
+        height: 30rem;
+
+        // border-radius: 3rem;
+        background-image: $grdient;
+      }
+      &_circlebox {
+        margin-right: -20rem;
+      }
+    }
+  }
+}
+
+// ********************* Door Access Control System ****************
+
+.door_container {
+  padding: 3rem 0rem;
+  width: 75%;
+  margin: auto;
+  margin-top: 12rem;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 10rem;
+    }
+    &_left {
+      display: flex;
+      flex-direction: column;
+      //   justify-content: center;
+      align-items: center;
+      &_bgbox {
+        width: 41.2rem;
+        height: 1402px;
+        padding: 3rem;
+        border-radius: 3rem;
+        background-image: $grdient;
+        ul {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          list-style-position: inside;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #fafafa;
+          li {
+            margin-top: 2.5rem;
+          }
+        }
+      }
+
+      &_circlebox {
+        margin-top: -22rem;
+      }
+    }
+    &_right {
+      width: 58.2rem;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}

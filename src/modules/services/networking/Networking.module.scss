@@ -8,7 +8,7 @@
   background-position: end;
   //   background-color: aqua;
   &_content {
-    // background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+    background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
     &_top {
       width: 75%;
       margin: auto;
@@ -67,6 +67,36 @@
       right: 0%;
       top: 20%;
       // background-color: palevioletred;
+    }
+  }
+}
+
+// ************* Network Security ************************
+
+.security_container {
+  padding: 3rem 0rem;
+  background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-position: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &_content {
+    width: 75%;
+    margin: auto;
+    margin-top: 8rem;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 80px;
+    }
+    &_right {
+      width: 61.2rem;
+    }
+    &_left {
+      // width: 49rem;
+      // background-color: aqua;
+      // padding: 1rem;
+      margin-top: 8rem;
     }
   }
 }
