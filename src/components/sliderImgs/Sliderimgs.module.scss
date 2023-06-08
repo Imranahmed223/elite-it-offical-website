@@ -1,0 +1,41 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.slider_container {
+  width: 221px;
+  height: 485px;
+  display: flex;
+  justify-content: right;
+  background-image: url("../../assets/sliderImgAssets/sliderImg1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+  backdrop-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  &_overlay {
+    width: 40%;
+    height: 485px;
+    background: linear-gradient(
+      179.99deg,
+      rgba(0, 0, 200, 0.2652) 0.01%,
+      rgba(0, 0, 200, 0.39) 34.88%
+    );
+    backdrop-filter: blur(15px);
+    border-radius: 0px 45px 45px 0px;
+    display: flex;
+    // align-items: center;
+    span {
+      height: 100%;
+
+      // background-color: aqua;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.2rem;
+    //   line-height: 76px;
+      color: #ffffff;
+      transform: rotate(-90deg);
+    }
+  }
+}

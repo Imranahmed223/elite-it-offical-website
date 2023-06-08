@@ -1,0 +1,12 @@
+.rsEye_container {
+  position: relative;
+  &_content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.content1 {
+  z-index: 9999;
+  margin-right: -250px;
+}

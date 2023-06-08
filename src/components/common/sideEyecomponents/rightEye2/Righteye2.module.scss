@@ -1,0 +1,74 @@
+@import "../../../../Sass/mixin";
+@import "../../../../Sass/variables";
+
+.righteye2 {
+  padding: 0.5rem 0rem;
+  //   background-color: #4cc9f0;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 140px;
+    }
+    &_left {
+      width: 43.6rem;
+      //   position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_bg {
+        width: 393px;
+        height: 695px;
+        margin-top: -200px;
+        display: flex;
+        align-items: flex-end;
+        background-image: url("../../../../assets/servicesAssets/iphotobg1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        p {
+          width: 90%;
+          margin: 0px auto;
+          margin-bottom: 20px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #fafafa;
+        }
+      }
+    }
+    &_right {
+      width: 58.2rem;
+      & > *:not(:first-child) {
+        margin-top: 22px;
+      }
+      h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 90px;
+        color: $textprimary;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 32px;
+        text-align: justify;
+        letter-spacing: -0.03em;
+        color: $textprimary;
+      }
+    }
+  }
+}
+.circle {
+  z-index: 99999;
+}

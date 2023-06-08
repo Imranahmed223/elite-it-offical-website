@@ -1,0 +1,47 @@
+@import "../../../../../Sass/mixin";
+@import "../../../../../Sass/variables";
+
+.LT_compo {
+  width: 43.6rem;
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_bg {
+    width: 393px;
+    // height: 695px;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../../../../../assets/servicesAssets/iphotobg1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    border-radius: 30px;
+    p {
+      width: 90%;
+      margin: 0px auto;
+      margin-bottom: 20px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 32px;
+      text-align: justify;
+      letter-spacing: -0.03em;
+      color: #fafafa;
+    }
+    h1 {
+      font-family: "Poppins";
+      font-style: italic;
+      font-weight: 400;
+      font-size: 2.8rem;
+      line-height: 90px;
+      /* identical to box height, or 320% */
+      text-align: center;
+      color: #fafafa;
+    }
+  }
+}

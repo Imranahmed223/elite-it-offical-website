@@ -1,0 +1,33 @@
+@import "../../../../Sass/mixin";
+@import "../../../../Sass/variables";
+
+.sbEye {
+  padding: 1rem 0rem;
+  &_top {
+    width: 43.6rem;
+    // height: 62.3rem;
+    // background-color: #4cc9f0;
+    background-image: url("../../../../assets/servicesAssets/iphotobg3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    &>*:not(:first-child){
+      margin-top: 25px;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 32px;
+      /* or 178% */
+      text-align: justify;
+      letter-spacing: -0.03em;
+      color: #fafafa;
+    }
+  }
+  &_bottom {
+    z-index: 99999;
+    margin-top: -220px;
+  }
+}

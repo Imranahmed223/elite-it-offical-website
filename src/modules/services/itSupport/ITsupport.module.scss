@@ -1,0 +1,196 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.itsupport_container {
+  padding: 30px;
+  background-image: url("../../../assets/servicesAssets/singlebgWL.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+  &_content {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: lightblue;
+    &_middle {
+      margin-top: 141px;
+    }
+    &_bottom {
+      margin-top: 65px;
+      display: flex;
+      //   justify-content: center;
+
+      &_left {
+        width: 58.4rem;
+      }
+      &_right {
+        position: absolute;
+        z-index: 9999;
+        right: -211px;
+        // background-color: palevioletred;
+      }
+    }
+  }
+}
+// ********************* IT Audits ****************
+.itaudits {
+  padding: 30px 0rem;
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 90px;
+    /* identical to box height, or 280% */
+    text-align: center;
+    color: #212427;
+  }
+  &_content {
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      //   background-color: aqua;
+      &_left {
+      }
+      &_right {
+        width: 108.6rem;
+        height: 34rem;
+        // z-index: 9999;
+        margin-left: -220px;
+        background-image: url("../../../assets/servicesAssets/iphotobg4.svg");
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_para {
+          width: 58.6rem;
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            /* or 178% */
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+}
+// ********************* Outsourced Container ****************
+
+.outsourced_container {
+  width: 75%;
+  margin: auto;
+  margin-top: 35px;
+  padding: 2rem 0rem;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 120px;
+    }
+    &_left {
+      width: 58.4rem;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+      ul {
+        list-style-position: inside;
+        li {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 32px;
+          /* or 178% */
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #212427;
+        }
+      }
+    }
+  }
+}
+// ********************* Remote Monitoring Container ****************
+
+.remote_container {
+  width: 75%;
+  margin: auto;
+  padding: 3rem 0rem;
+  &_content {
+    display: flex;
+    justify-content: center;
+    & > *:not(:first-child) {
+      margin-left: 80px;
+    }
+    &_left {
+    }
+    &_right {
+      width: 62.2rem;
+
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      ul {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        list-style-position: inside;
+        text-align: justify;
+        letter-spacing: -0.03em;
+        color: #212427;
+      }
+    }
+  }
+}
+// ********************* Data Backup Container ****************
+
+.backup_container {
+  &_content {
+    width: 75%;
+    margin: auto;
+    margin-top: -5rem;
+    p {
+      width: 57.2rem;
+    }
+  }
+}
+// ********************* Assets Container ****************
+
+.assets_container {
+  padding: 0.5rem 0rem;
+  margin-top: 8rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    & > *:not(:first-child) {
+      margin-top: 2.5rem;
+    }
+    &_innercontent {
+      position: relative;
+      display: flex;
+      margin-top: 2.5rem;
+      &_left {
+        width: 47.2rem;
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+        }
+      }
+      &_right {
+        position: absolute;
+        z-index: 9999;
+        right: -190px;
+        // background-color: palevioletred;
+      }
+    }
+  }
+}

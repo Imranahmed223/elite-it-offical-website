@@ -1,0 +1,21 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.circleImg_container {
+  width: 43.6rem;
+  height: 43.6rem;
+  padding: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.152) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

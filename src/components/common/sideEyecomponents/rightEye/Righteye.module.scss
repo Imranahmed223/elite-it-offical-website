@@ -1,0 +1,62 @@
+@import "../../../../Sass/mixin";
+@import "../../../../Sass/variables";
+
+.rightEye {
+  margin-top: 40px;
+  padding: 4rem 0rem;
+  // background-color: aqua;
+
+  &_content {
+    width: 75%;
+    margin: auto;
+    // padding: 0.5rem 0rem;
+    // background-color: lightcoral;
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.2rem;
+      line-height: 90px;
+      /* identical to box height, or 280% */
+      color: $textprimary;
+    }
+    &_innercontent {
+      margin-top: -40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_left {
+        width: 108.6rem;
+        height: 34rem;
+        // z-index: 9999;
+        margin-left: -190px;
+        background-image: url("../../../../assets/servicesAssets/iphotobg2.svg");
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+          padding: 3rem 0rem;
+          // background-color: red;
+          margin-left: -110px;
+          p {
+            width: 58.6rem;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            /* or 178% */
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #fafafa;
+          }
+        }
+      }
+      &_right {
+        z-index: 9999999999;
+        margin-left: -180px;
+      }
+    }
+  }
+}

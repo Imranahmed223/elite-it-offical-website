@@ -1,0 +1,391 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+// ************************* Header Container ***********************************
+.header_container {
+  position: relative;
+  height: 100vh;
+  background-color: white;
+  background-image: url("../../assets/homeAssets/bg0.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //   background-image: url("../../../assets/headerAssets/wline2.svg");
+  padding-top: 5rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: palevioletred;
+
+    &_middle {
+      margin-top: 161px;
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.9rem;
+        line-height: 88px;
+        color: #212427;
+      }
+      h1 {
+        font-family: "Archivo Black";
+        font-style: normal;
+        font-size: 9.2rem;
+        line-height: 100px;
+        background: linear-gradient(90.97deg, #0000c8 33.22%, #62049f 91.82%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &_btn {
+        margin-top: 63px;
+        button {
+          width: 22rem;
+          background: none;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2.4rem;
+          line-height: 36px;
+          color: #212427;
+          //   & > *:not(:first-child) {
+          //     margin-left: 17px;
+          //   }
+        }
+      }
+    }
+  }
+  &_bottom {
+    width: 75%;
+    margin: auto;
+    z-index: 99999999;
+    position: absolute;
+    left: 12%;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 5.1rem;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1692) 0%,
+      rgba(255, 255, 255, 0) 136.36%
+    );
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(11px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 30px;
+  }
+}
+.percent_container {
+  width: 25%;
+  // background-color: aqua;
+  h1 {
+    text-align: center;
+    font-family: "Archivo Black";
+    font-size: 5.1rem;
+    line-height: 82px;
+    background: linear-gradient(0deg, #0000c8, #0000c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: normal;
+  }
+  p {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 36px;
+    color: #ffffff;
+  }
+}
+.sidebtn {
+  position: absolute;
+  right: -4%;
+  top: 50%;
+  //   bottom: -428.26%;
+
+  background: linear-gradient(266.6deg, #0000c8 -5.03%, #46baed 110.27%);
+  border-radius: 11px 11px 0px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #fafafa;
+  transform: rotate(-90deg);
+  border: none;
+  padding: 8px 19.46px;
+}
+// ************************* Home Middle Container ***********************************
+
+.homeMain_container {
+  background-image: url("../../assets/homeAssets/bg1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .about_container {
+    position: relative;
+    padding: 2rem 0rem;
+    // background: linear-gradient(0deg, #0000c8, #0000c8);
+    &_content {
+      width: 75%;
+      margin: auto;
+      padding: 2rem 0rem;
+      &_left {
+        width: 50%;
+        margin-top: 150px;
+        span {
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 72px;
+          color: white;
+        }
+        h3 {
+          margin-top: 30px;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 5.1rem;
+          // line-height: 82px;
+          color: #fafafa;
+        }
+        h1 {
+          font-family: "Archivo Black";
+          font-size: 7.7rem;
+          line-height: 82px;
+          color: #fafafa;
+        }
+        p {
+          width: 90%;
+          margin-top: 56px;
+          font-family: "Poppins";
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #ffffff;
+        }
+        button {
+          margin-top: 57px;
+          background: none;
+          border: 1px solid #4cc9f0;
+          border-radius: 70px;
+          padding: 0.5rem 2.1rem;
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: 0.09em;
+          text-transform: uppercase;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      right: 0%;
+      top: 39%;
+    }
+  }
+  // ************************* Home Middle Service Container ***********************************
+
+  .services_container {
+    padding: 2rem 0rem;
+    margin-top: 168px;
+    &_content {
+      width: 75%;
+      margin: auto;
+      &_top {
+        span {
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 72px;
+          letter-spacing: 0.35em;
+          text-transform: uppercase;
+          color: #0000c8;
+        }
+        h2 {
+          margin-top: 2.6rem;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 5.1rem;
+          line-height: 90px;
+          color: #fafafa;
+        }
+        h1 {
+          font-family: "Archivo Black";
+          font-size: 7.7rem;
+          line-height: 90px;
+          color: #0000c8;
+        }
+      }
+      &_middle {
+        margin-top: 98px;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        & > *:not(:first-child) {
+          margin-left: 2rem;
+        }
+      }
+      &_bottom {
+        display: flex;
+        justify-content: right;
+        margin-top: 185px;
+        padding: 0.5rem 0rem;
+        // background-color: lawngreen;
+        &_right {
+          width: 40%;
+          h1 {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 72px;
+            letter-spacing: 0.35em;
+            color: #ffffff;
+          }
+          p {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 32px;
+            text-align: justify;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+// ************************* Mission Container ***********************************
+
+.mission_container {
+  padding: 0.5rem 0rem;
+  background-image: url("../../assets/homeAssets/bg2.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+    // background-color: #4cc9f0;
+    margin-bottom: 150px;
+    & > *:not(:first-child) {
+      margin-left: 6rem;
+    }
+    &_left {
+      width: 46%;
+
+      & > *:not(:first-child) {
+        margin-top: 2rem;
+      }
+      &_b1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.38) 0%,
+          rgba(255, 255, 255, 0.152) 100%
+        );
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(15px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 30px;
+        z-index: 99999;
+        margin-top: -300px;
+        h1 {
+          margin-top: 64px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 5.1rem;
+          line-height: 82px;
+          color: #fafafaa9;
+        }
+        span {
+          font-family: "Archivo Black";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 7.7rem;
+          line-height: 82px;
+          color: #fafafa;
+        }
+        // img {
+        // }
+      }
+      button {
+        float: right;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 32px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #0000c8;
+        background: none;
+        padding: 5px 21px;
+        border: 1px solid #0000c8;
+        border-radius: 70px;
+        margin-top: 35px;
+        cursor: pointer;
+      }
+    }
+    &_right {
+      // width: 45%;
+      & > *:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.imglayout {
+  margin-top: 127px;
+  width: 495px;
+  height: 643px;
+  background-image: url("../../assets/missionAssets/mi1.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-out;
+
+  h1 {
+    // font-family: "Archivo Black";
+    font-weight: 600;
+    color: white;
+    display: none;
+  }
+  &:hover {
+    background: linear-gradient(
+      179.99deg,
+      rgba(0, 0, 200, 0.2652) 0.01%,
+      rgba(0, 0, 200, 0.39) 34.88%
+    );
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    cursor: pointer;
+    h1 {
+      display: block;
+    }
+  }
+}

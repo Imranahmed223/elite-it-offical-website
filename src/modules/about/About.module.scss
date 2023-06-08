@@ -1,0 +1,111 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.about_header_container {
+  position: relative;
+  padding: 57px 0px;
+  // background-color: aqua;
+  height: auto;
+  background-image: url("../../assets/aboutAssets/abg1.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+
+  &_content {
+    width: 75%;
+    margin: auto;
+    &_top {
+      margin-top: 159px;
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.1rem;
+        line-height: 90px;
+        text-align: center;
+        color: #212427;
+      }
+      h1 {
+        font-family: "Archivo Black";
+        font-size: 7.7rem;
+        line-height: 90px;
+        text-align: center;
+        color: #0000c8;
+      }
+    }
+    &_bottom {
+      margin-top: 67px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_left {
+        width: 58.6rem;
+        padding: 0.5rem 0rem;
+        // background-color: aqua;
+        margin-top: 123px;
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: -0.03em;
+          color: #ffffff;
+        }
+      }
+      &_right {
+        margin-bottom: -11rem;
+        // background-color: #0000c8;
+      }
+    }
+  }
+}
+
+.about_middle_container {
+  padding: 60px 0px;
+  //   background-color: aqua;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+    // background-color: lightblue;
+    & > *:not(:first-child) {
+      margin-left: 65px;
+    }
+    h3 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5.1rem;
+      line-height: 90px;
+      text-align: center;
+      color: #212427;
+    }
+    h1 {
+      font-family: "Archivo Black";
+      font-size: 7.7rem;
+      line-height: 90px;
+      color: #1313f0c8;
+    }
+  }
+}
+
+.about_middle2_container {
+  &_content {
+    width: 791px;
+    margin: auto;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 32px;
+      text-align: justify;
+      letter-spacing: -0.03em;
+      color: #212427;
+    }
+  }
+}
