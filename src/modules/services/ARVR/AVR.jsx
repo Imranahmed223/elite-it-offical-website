@@ -9,6 +9,7 @@ import {
   SidebtnC,
   SinglebEye,
 } from "../../../components";
+import { Iphoto36, Iphoto37, Iphoto38, Iphoto39 } from "../../../assets";
 
 const AVR = () => {
   return (
@@ -108,7 +109,7 @@ const AVR = () => {
           <div className={styles.augmented_container_content_right}>
             <LefttopEye
               bgpara="If you're interested in incorporating AR into your business or daily life, the time to start exploring this exciting technology is now."
-              //   Iphoto={Iphoto10}
+                Iphoto={Iphoto36}
               length="45.7rem"
               //   bghead="What is PPC"
             />
@@ -146,7 +147,7 @@ const AVR = () => {
               </ul>
             </div>
             <div className={styles.virtual_container_content_left_circlebox}>
-              <CircleImg />
+              <CircleImg AvaterImg={Iphoto37}/>
             </div>
           </div>
           <div className={styles.virtual_container_content_right}>
@@ -183,7 +184,7 @@ const AVR = () => {
       <Righteye
         title="AR/VR Services"
         para=" At Elite IT, we specialise in creating thriving VR and AR experiences by understanding your product vision and business goals. Working closely with your team, we develop a clear plan for the artistic direction, technologies, user experience, platforms, and talent needed to bring your project to life. Our team has expertise in creating realistic and immersive VR art assets, and we also offer integrated AR and VR solutions that can be seamlessly integrated into your core business systems. Our goal is to create unique and engaging virtual experiences that are suitable for all types of audiences. Trust us to handle the complex tasks of creating AR and VR software and AI applications with ease."
-        // Iphoto={Iphoto4}
+        Iphoto={Iphoto38}
       />
       {/* ***************** Virtual Reality section2 **************** */}
       <div className={styles.vr_container}>
@@ -214,7 +215,7 @@ const AVR = () => {
             <SinglebEye
               length="675px"
               para="Although technology has progressed to enable the creation of cross-platform mobile apps, native app development is still a suitable option for many projects and can even be essential in some cases. Our developers recognize the benefits of native app development, including improved device interactivity, and use the latest versions of Swift and Kotlin/Java to create scalable and robust native applications. We can also create and migrate apps between platforms, ensuring that the same functionality and design is maintained."
-              //   Iphoto={Iphoto33}
+                Iphoto={Iphoto39}
             />
           </div>
         </div>

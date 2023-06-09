@@ -43,6 +43,13 @@ import Iphoto31 from "./servicesAssets/iphoto31.svg";
 import Iphoto32 from "./servicesAssets/iphoto32.svg";
 import Iphoto33 from "./servicesAssets/iphoto33.svg";
 import Iphoto34 from "./servicesAssets/iphoto34.svg";
+import Iphoto35 from "./servicesAssets/iphoto35.svg";
+import Iphoto36 from "./servicesAssets/iphoto36.svg";
+import Iphoto37 from "./servicesAssets/iphoto37.svg";
+import Iphoto38 from "./servicesAssets/iphoto38.svg";
+import Iphoto39 from "./servicesAssets/iphoto39.svg";
+import Iphoto40 from "./servicesAssets/iphoto40.svg";
+import Iphoto41 from "./servicesAssets/iphoto41.svg";
 import Iphotobg1 from "./servicesAssets/iphotobg1.svg";
 import Iphotobg3 from "./servicesAssets/iphotobg3.svg";
 import Iphotobg4 from "./servicesAssets/singleRbg.svg";
@@ -97,5 +104,12 @@ export {
   Iphoto32,
   Iphoto33,
   Iphoto34,
+  Iphoto35,
+  Iphoto36,
+  Iphoto37,
+  Iphoto38,
+  Iphoto39,
+  Iphoto40,
+  Iphoto41,
   Arrowdown,
 };

@@ -14,6 +14,7 @@ import {
   Iphoto32,
   Iphoto33,
   Iphoto34,
+  Iphoto35,
 } from "../../../assets";
 
 const MApp = () => {
@@ -34,7 +35,7 @@ const MApp = () => {
               <Righteye
                 title="MobileApp Design"
                 para=" Our team of app developers has a proven track record of designing highly functional and user-centric mobile apps for Android and iOS. This means that we prioritise the user experience in our app design and place the user at the centre of the design process. We understand that the user interface of the app is a key part of the interaction with the audience, and we strive to create apps that are intuitive and easy to use."
-                Iphoto={Iphoto32}
+                Iphoto={Iphoto35}
               />
               <div className={styles.mobileApp_container_content}>
                 <div className={styles.mobileApp_container_content_left}>

@@ -30,6 +30,15 @@ const Work = () => {
           </div>
         </div>
       </div>
+      {/* ************** Development Buttons ************************ */}
+      <div className={styles.devBtns}>
+        <div className={styles.devBtns_content}>
+          <button>WEB DEVELOPMENT</button>
+          <button>APP DEVELOPMENT</button>
+        </div>
+      </div>
+
+
     </>
   );
 };

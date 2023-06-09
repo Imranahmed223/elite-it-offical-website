@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./CCTV.module.scss";
 import { CircleImg, Footer, Navbar, SidebtnC } from "../../../components";
+import { Iphoto40, Iphoto41 } from "../../../assets";
 
 const CCTV = () => {
   return (
@@ -65,7 +66,7 @@ const CCTV = () => {
           </div>
           <div className={styles.cctv_system_content_right}>
             <div className={styles.cctv_system_content_right_circlebox}>
-              <CircleImg />
+              <CircleImg AvaterImg={Iphoto40} />
             </div>
             <div className={styles.cctv_system_content_right_bgbox}></div>
           </div>
@@ -113,7 +114,7 @@ const CCTV = () => {
               </ul>
             </div>
             <div className={styles.door_container_content_left_circlebox}>
-              <CircleImg />
+              <CircleImg AvaterImg={Iphoto41} />
             </div>
           </div>
           <div className={styles.door_container_content_right}>
