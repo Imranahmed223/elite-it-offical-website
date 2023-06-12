@@ -6,6 +6,7 @@ import { mobileprojectData, webprojectData } from "../../data/projectsData";
 
 const Work = () => {
   const [data, setData] = useState(webprojectData);
+  const [activeTab, setActiveTab] = useState(true);
 
   console.log(webprojectData);
   return (
@@ -37,10 +38,24 @@ const Work = () => {
       {/* ************** Development Buttons ************************ */}
       <div className={styles.devBtns}>
         <div className={styles.devBtns_content}>
-          <button onClick={() => setData(webprojectData)}>
+          <button
+            className={styles.btns}
+            onClick={() => {
+              setData(webprojectData);
+              setActiveTab(!activeTab);
+            }}
+            id={activeTab ? styles["shadow"] : ""}
+          >
             WEB DEVELOPMENT
           </button>
-          <button onClick={() => setData(mobileprojectData)}>
+          <button
+            className={styles.btns}
+            onClick={() => {
+              setData(mobileprojectData);
+              setActiveTab(!activeTab);
+            }}
+            id={activeTab ? "" : styles["shadow"]}
+          >
             APP DEVELOPMENT
           </button>
         </div>
