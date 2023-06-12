@@ -54,6 +54,26 @@ import Iphotobg1 from "./servicesAssets/iphotobg1.svg";
 import Iphotobg3 from "./servicesAssets/iphotobg3.svg";
 import Iphotobg4 from "./servicesAssets/singleRbg.svg";
 import Arrowdown from "./workAssets/arrowdown.svg";
+import P1img from "./workAssets/P1.png";
+import P2img from "./workAssets/p2.png";
+import P3img from "./workAssets/p3.png";
+import P4img from "./workAssets/p4.png";
+import P5img from "./workAssets/p5.png";
+import P6img from "./workAssets/p6.png";
+import P7img from "./workAssets/p7.png";
+import P8img from "./workAssets/p8.png";
+// import P9img from "./workAssets/p9.png";
+import Imgmp1 from "./workAssets/mp1.png";
+import Imgmp2 from "./workAssets/mp2.png";
+import Imgmp3 from "./workAssets/mp3.png";
+import Imgmp4 from "./workAssets/mp4.png";
+import Imgmp5 from "./workAssets/mp5.png";
+
+import P1arrow from "./workAssets/pArrowdown.svg";
+import P2arrow from "./workAssets/pArrowUp.svg";
+import AcordionImg1 from "./workAssets/acordionImg1.svg";
+import AcordionImg2 from "./workAssets/acordionImg2.svg";
+import AcordionImg3 from "./workAssets/acordionImg3.svg";
 
 export {
   Logo,
@@ -112,4 +132,23 @@ export {
   Iphoto40,
   Iphoto41,
   Arrowdown,
+  P1img,
+  P2img,
+  P3img,
+  P4img,
+  P5img,
+  P6img,
+  P7img,
+  P8img,
+  // P9img,
+  P1arrow,
+  P2arrow,
+  AcordionImg1,
+  AcordionImg2,
+  AcordionImg3,
+  Imgmp1,
+  Imgmp2,
+  Imgmp3,
+  Imgmp4,
+  Imgmp5,
 };

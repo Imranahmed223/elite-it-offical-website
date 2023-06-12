@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Work.module.scss";
-import { CircleImg, Footer, Navbar, SidebtnC } from "../../components";
+import { Footer, Navbar, Projectsdesc, SidebtnC } from "../../components";
 import { Arrowdown } from "../../assets";
+import { mobileprojectData, webprojectData } from "../../data/projectsData";
 
 const Work = () => {
+  const [data, setData] = useState(webprojectData);
+
+  console.log(webprojectData);
   return (
     <>
       <div className={styles.work_container}>
@@ -33,12 +37,36 @@ const Work = () => {
       {/* ************** Development Buttons ************************ */}
       <div className={styles.devBtns}>
         <div className={styles.devBtns_content}>
-          <button>WEB DEVELOPMENT</button>
-          <button>APP DEVELOPMENT</button>
+          <button onClick={() => setData(webprojectData)}>
+            WEB DEVELOPMENT
+          </button>
+          <button onClick={() => setData(mobileprojectData)}>
+            APP DEVELOPMENT
+          </button>
         </div>
       </div>
-
-
+      {/* ************** Web Projects Description Components ************************ */}
+      {data.map((item) => {
+        return (
+          <>
+            <Projectsdesc
+              key={item.id}
+              image={item.image}
+              name={item.name}
+              description={item.des}
+              icon={item.icon}
+              design={item.designTime}
+              designTime={item.designTime}
+              backEndTime={item.backEndTime}
+              frontEndTime={item.frontEndTime}
+              integrationTime={item.integrationTime}
+              designer={item.designer}
+              frontend={item.frontdev}
+              backend={item.backdev}
+            />
+          </>
+        );
+      })}
     </>
   );
 };

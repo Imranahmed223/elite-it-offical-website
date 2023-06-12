@@ -15,4 +15,4 @@ export { default as Righteye2 } from "./common/sideEyecomponents/rightEye2/Right
 export { default as Lefteye } from "./common/sideEyecomponents/leftEye/Lefteye";
 export { default as LefttopEye } from "./common/sideEyecomponents/SingleEye_folder/leftTopEye/LefttopEye";
 export { default as RightsideEye } from "./common/sideEyecomponents/SingleEye_folder/righsideEye/RightsideEye";
-export { default as Webprojects } from "./webProjects/Webprojects";
+export { default as Projectsdesc } from "./projectsDesc/Projectsdesc";
