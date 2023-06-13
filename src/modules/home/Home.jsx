@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Carousel1,
   MCardbox,
   MCardbox2,
   MCardbox3,
@@ -114,11 +115,15 @@ const Home = (props) => {
       {/* #################### Testimonials feedback Container ############################ */}
       <div className={styles.tsf_container}>
         <h1>Tesimonials</h1>
-        <div className={styles.tsf_container_top}>
-          <h3>Feedback that</h3>
-          <h1>Speaks volumes</h1>
+        <div className={styles.tsf_container_content}>
+          <div className={styles.tsf_container_content_top}>
+            <h3>Feedback that</h3>
+            <span>Speaks volumes</span>
+          </div>
+          <div className={styles.tsf_container_content_bottom}>
+          <Carousel1 />
+          </div>
         </div>
-        <div className={styles.tsf_container_bottom}></div>
       </div>
     </>
   );

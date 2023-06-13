@@ -2,6 +2,8 @@ import Logo from "./headerAssets/logo.svg";
 import arrow1 from "./headerAssets/harrow.svg";
 import simg1 from "./homeAssets/absideImg.svg";
 import simg2 from "./homeAssets/simg1.svg";
+import CarouselImg1 from "./homeAssets/carouselImg1.svg";
+
 import MI1 from "./missionAssets/mi1.svg";
 import MI2 from "./missionAssets/mi2.svg";
 import MI3 from "./missionAssets/mi3.svg";
@@ -80,6 +82,7 @@ export {
   arrow1,
   simg1,
   simg2,
+  CarouselImg1,
   MI1,
   MI2,
   MI3,
