@@ -121,9 +121,13 @@ const Home = (props) => {
             <span>Speaks volumes</span>
           </div>
           <div className={styles.tsf_container_content_bottom}>
-          <Carousel1 />
+            <Carousel1 />
           </div>
         </div>
+      </div>
+      {/* #################### Benefits Container ############################ */}
+      <div className={styles.benefit_container}>
+        <h1>Benefits</h1>
       </div>
     </>
   );
