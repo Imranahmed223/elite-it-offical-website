@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Carousel1,
+  Carousel2,
   MCardbox,
   MCardbox2,
   MCardbox3,
@@ -8,7 +9,17 @@ import {
   Sliderimgs,
 } from "../../components";
 import styles from "./Home.module.scss";
-import { MI1, MI2, MI3, MI4, MI5, arrow1, simg1, simg2 } from "../../assets";
+import {
+  Chose1,
+  MI1,
+  MI2,
+  MI3,
+  MI4,
+  MI5,
+  arrow1,
+  simg1,
+  simg2,
+} from "../../assets";
 
 const Home = (props) => {
   return (
@@ -127,7 +138,61 @@ const Home = (props) => {
       </div>
       {/* #################### Benefits Container ############################ */}
       <div className={styles.benefit_container}>
-        <h1>Benefits</h1>
+        <h2>Benefits</h2>
+        <div className={styles.benefit_container_content}>
+          <div className={styles.benefit_container_content_top}>
+            <span>Reasons to</span>
+            <h1>choose us</h1>
+          </div>
+          <div className={styles.benefit_container_content_bottom}>
+            <div className={styles.benefit_container_content_bottom_left}>
+              <ChooseCompo
+                Images={Chose1}
+                desc="By choosing our company, you gain access to a wealth of knowledge and
+        expertise cultivated over a decade of building complex custom
+        applications."
+              />
+              <ChooseCompo
+                Images={Chose1}
+                desc="By choosing our company, you gain access to a wealth of knowledge and
+        expertise cultivated over a decade of building complex custom
+        applications."
+              />
+              <ChooseCompo
+                Images={Chose1}
+                desc="By choosing our company, you gain access to a wealth of knowledge and
+        expertise cultivated over a decade of building complex custom
+        applications."
+              />
+            </div>
+            <div className={styles.benefit_container_content_bottom_right}>
+              <ChooseCompo
+                Images={Chose1}
+                desc="By choosing our company, you gain access to a wealth of knowledge and
+        expertise cultivated over a decade of building complex custom
+        applications."
+              />
+              <ChooseCompo
+                Images={Chose1}
+                desc="By choosing our company, you gain access to a wealth of knowledge and
+        expertise cultivated over a decade of building complex custom
+        applications."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* #################### Latests Blog Container ############################ */}
+      <div className={styles.latestblog_container}>
+        <div className={styles.latestblog_container_content}>
+          <div className={styles.latestblog_container_content_top}>
+            <h3>Check out our</h3>
+            <span>latests blogs</span>
+          </div>
+          <div className={styles.latestblog_container_content_bottom}>
+            <Carousel2 />
+          </div>
+        </div>
       </div>
     </>
   );
@@ -140,6 +205,15 @@ const Percent = ({ title, desc }) => {
     <div className={styles.percent_container}>
       <h1>{title}</h1>
       <p>{desc}</p>
+    </div>
+  );
+};
+
+const ChooseCompo = (props) => {
+  return (
+    <div className={styles.choose}>
+      <img src={props.Images} alt="Icons" />
+      <p>{props.desc}</p>
     </div>
   );
 };

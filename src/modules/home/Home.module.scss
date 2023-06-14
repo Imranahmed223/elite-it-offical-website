@@ -442,8 +442,138 @@
     }
     &_bottom {
       padding: 1rem 0rem;
+      // height: 100vh;
       // background-color: goldenrod;
       margin-top: 3rem;
+    }
+  }
+}
+
+// ************************* Benefit Container ***********************************
+
+.benefit_container {
+  padding: 1rem 0rem;
+  h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 72px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #0000c8;
+  }
+  &_content {
+    padding: 1rem 0rem;
+    height: auto;
+    background-image: url("../../assets/homeAssets/bg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+    padding-bottom: 350px;
+    &_top {
+      padding: 3rem 0rem;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.1rem;
+        text-align: center;
+        line-height: 90px;
+        text-align: center;
+        color: #fafafa;
+      }
+      & > h1 {
+        font-family: "Archivo Black";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7.7rem;
+        line-height: 82px;
+        /* identical to box height, or 106% */
+        color: #fafafa;
+      }
+    }
+    &_bottom {
+      width: 65%;
+      margin: auto;
+      margin-top: 144px;
+      padding: 2rem 0rem;
+      display: flex;
+      justify-content: space-between;
+      // background-color: red;
+      &_left {
+        & > *:not(:first-child) {
+          margin-top: 150px;
+        }
+      }
+      &_right {
+        & > * {
+          margin-top: 163px;
+        }
+      }
+    }
+  }
+}
+
+.choose {
+  width: 35.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 28px;
+    text-align: justify;
+    color: #ffffff;
+  }
+}
+// ************************* Latests Blog Container ***********************************
+
+.latestblog_container {
+  margin-top: 80px;
+  padding: 2rem 0rem;
+  &_content {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0rem;
+    &_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.1rem;
+        line-height: 90px;
+        text-align: center;
+        color: $textprimary;
+      }
+      span {
+        font-family: "Archivo Black";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7.7rem;
+        line-height: 90px;
+        text-align: center;
+        background: linear-gradient(264.21deg, #0000c8 20.07%, #7209b7 88.05%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &_bottom {
+      padding: 1rem 0rem;
+      background-color: palevioletred;
     }
   }
 }

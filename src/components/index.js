@@ -8,6 +8,7 @@ export { default as CircleImg } from "./circleImg/CircleImg";
 export { default as SidebtnC } from "./sidebtn/Sidebtn";
 export { default as Selecter } from "./selector/Selector";
 export { default as Carousel1 } from "./carousels/carousel1/Carousel1";
+export { default as Carousel2 } from "./carousels/carousel2/Carousel2";
 
 export { default as BottomEye } from "./common/sideEyecomponents/bottomEye/BottomEye";
 export { default as SinglebEye } from "./common/sideEyecomponents/singleBottomeye/SingleBEye";

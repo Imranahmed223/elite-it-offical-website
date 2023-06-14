@@ -3,6 +3,12 @@ import arrow1 from "./headerAssets/harrow.svg";
 import simg1 from "./homeAssets/absideImg.svg";
 import simg2 from "./homeAssets/simg1.svg";
 import CarouselImg1 from "./homeAssets/carouselImg1.svg";
+import CarouselImg2 from "./homeAssets/carouselImg2.png";
+import Chose1 from "./homeAssets/chose1.svg";
+import Chose2 from "./homeAssets/chose2.svg";
+import Chose3 from "./homeAssets/chose3.svg";
+import Chose4 from "./homeAssets/chose4.svg";
+import Chose5 from "./homeAssets/chose5.svg";
 
 import MI1 from "./missionAssets/mi1.svg";
 import MI2 from "./missionAssets/mi2.svg";
@@ -83,6 +89,12 @@ export {
   simg1,
   simg2,
   CarouselImg1,
+  CarouselImg2,
+  Chose1,
+  Chose2,
+  Chose3,
+  Chose4,
+  Chose5,
   MI1,
   MI2,
   MI3,
