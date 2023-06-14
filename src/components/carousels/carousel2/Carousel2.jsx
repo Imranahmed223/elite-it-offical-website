@@ -22,50 +22,41 @@ const Carousel2 = () => {
           {/* ****************** Card1 ************************ */}
           <div className={styles.item_card2}>
             <div className={styles.item_card2_content}>
-                <div className={styles.item_card2_content_top}>
-                    <img src={CarouselImg2} alt="display" />
-                </div>
-                <div className={styles.item_card2_content_bottom}></div>
+              <div className={styles.item_card2_content_top}>
+                <img src={CarouselImg2} alt="avater" />
+              </div>
+              <div className={styles.item_card2_content_bottom}>
+                <span>How to master smart remote working</span>
+                <h3>21st April, 2023</h3>
+              </div>
             </div>
           </div>
+          {/* ****************** Card2 ************************ */}
           <div className={styles.item_card2}>
             <div className={styles.item_card2_content}>
-                <div className={styles.item_card2_content_top}>
-                    <img src={CarouselImg2} alt="display" />
-                </div>
-                <div className={styles.item_card2_content_bottom}></div>
+              <div className={styles.item_card2_content_top}>
+                <img src={CarouselImg2} alt="avater" />
+              </div>
+              <div className={styles.item_card2_content_bottom}>
+                <span>
+                  Transforming your business with the power of cloud computing
+                </span>
+                <h3>21st April, 2023</h3>
+              </div>
             </div>
           </div>
-
-          {/* ****************** Card2 ************************ */}
-          {/* <div className={styles.item_card}>
-            <div className={styles.item_card_top}>
-              <img src={CarouselImg1} alt="avater" />
-            </div>
-            <div className={styles.item_card_bottom}>
-              <span>
-                An extremely professional service, from start to end, very
-                helpful and very patient, I will most certainly use this service
-                again..
-              </span>
-              <h3>-CanaCott, United Kingdom</h3>
-            </div>
-          </div> */}
           {/* ****************** Card3 ************************ */}
-          {/* <div className={styles.item_card}>
-            <div className={styles.item_card_top}>
-              <img src={CarouselImg1} alt="avater" />
+          <div className={styles.item_card2}>
+            <div className={styles.item_card2_content}>
+              <div className={styles.item_card2_content_top}>
+                <img src={CarouselImg2} alt="avater" />
+              </div>
+              <div className={styles.item_card2_content_bottom}>
+                <span>How to utilize web 3.0</span>
+                <h3>21st April, 2023</h3>
+              </div>
             </div>
-            <div className={styles.item_card_bottom}>
-              <span>
-                What sets Elite IT Team apart is their exceptional customer
-                service. They were always available to answer our questions and
-                resolve any issues promptly. I highly recommend Elite IT Team to
-                any business looking for reliable and effective IT services!
-              </span>
-              <h3>-CanaCott, United Kingdom</h3>
-            </div>
-          </div> */}
+          </div>
         </Slider>
       </div>
     </>

@@ -9,6 +9,26 @@ import Chose2 from "./homeAssets/chose2.svg";
 import Chose3 from "./homeAssets/chose3.svg";
 import Chose4 from "./homeAssets/chose4.svg";
 import Chose5 from "./homeAssets/chose5.svg";
+import SocialIcon1 from "./homeAssets/socialIcon1.svg";
+import SocialIcon2 from "./homeAssets/socialIcon2.svg";
+import SocialIcon3 from "./homeAssets/socialIcon3.svg";
+import SocialIcon4 from "./homeAssets/socialIcon4.svg";
+import SocialIcon5 from "./homeAssets/socialIcon5.svg";
+import SocialIcon6 from "./homeAssets/socialIcon6.svg";
+import SocialIcon7 from "./homeAssets/socialIcon7.svg";
+import SocialIcon8 from "./homeAssets/socialIcon8.svg";
+import SocialIcon9 from "./homeAssets/socialIcon9.svg";
+import SocialIcon10 from "./homeAssets/socialIcon10.svg";
+import SocialIcon11 from "./homeAssets/socialIcon11.svg";
+import SocialIcon12 from "./homeAssets/socialIcon12.svg";
+import SIcons20 from "./homeAssets/SIcon20.svg";
+import SIcons21 from "./homeAssets/SIcon21.svg";
+// import SIcons22 from "./homeAssets/SIcon22.svg";
+import SIcons23 from "./homeAssets/SIcon23.svg";
+import SIcons24 from "./homeAssets/SIcon24.svg";
+import SIcons25 from "./homeAssets/SIcon25.svg";
+import SIcons26 from "./homeAssets/SIcon26.svg";
+import SIcons27 from "./homeAssets/SIcon27.svg";
 
 import MI1 from "./missionAssets/mi1.svg";
 import MI2 from "./missionAssets/mi2.svg";
@@ -95,6 +115,25 @@ export {
   Chose3,
   Chose4,
   Chose5,
+  SocialIcon1,
+  SocialIcon10,
+  SocialIcon11,
+  SocialIcon2,
+  SocialIcon3,
+  SocialIcon4,
+  SocialIcon5,
+  SocialIcon6,
+  SocialIcon7,
+  SocialIcon8,
+  SocialIcon9,
+  SocialIcon12,
+  SIcons20,
+  SIcons21,
+  SIcons23,
+  SIcons24,
+  SIcons25,
+  SIcons26,
+  SIcons27,
   MI1,
   MI2,
   MI3,

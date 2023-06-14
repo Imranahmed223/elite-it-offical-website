@@ -1,4 +1,7 @@
 import React from "react";
+import FormInput from "../../FormInput/FormInput";
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
 import {
   Carousel1,
   Carousel2,
@@ -11,17 +14,45 @@ import {
 import styles from "./Home.module.scss";
 import {
   Chose1,
+  Chose2,
+  Chose3,
+  Chose4,
+  Chose5,
   MI1,
   MI2,
   MI3,
   MI4,
   MI5,
+  SIcons20,
+  SIcons21,
+  SIcons23,
+  SIcons24,
+  SIcons25,
+  SIcons26,
+  SIcons27,
+  SocialIcon1,
+  SocialIcon10,
+  SocialIcon11,
+  SocialIcon12,
+  SocialIcon2,
+  SocialIcon3,
+  SocialIcon4,
+  SocialIcon5,
+  SocialIcon6,
+  SocialIcon7,
+  SocialIcon8,
+  SocialIcon9,
   arrow1,
   simg1,
   simg2,
 } from "../../assets";
 
 const Home = (props) => {
+  const validate = Yup.object({
+    email: Yup.string().email("Email is invalid").required("Email is Required"),
+    name: Yup.string().required("Name is Required"),
+    password: Yup.string(),
+  });
   return (
     <>
       <div className={styles.header_container}>
@@ -153,30 +184,22 @@ const Home = (props) => {
         applications."
               />
               <ChooseCompo
-                Images={Chose1}
-                desc="By choosing our company, you gain access to a wealth of knowledge and
-        expertise cultivated over a decade of building complex custom
-        applications."
+                Images={Chose3}
+                desc="We redefine development capabilities with time-tested expertise and a vast code repository, delivering cost-efficient options to build premium custom applications."
               />
               <ChooseCompo
-                Images={Chose1}
-                desc="By choosing our company, you gain access to a wealth of knowledge and
-        expertise cultivated over a decade of building complex custom
-        applications."
+                desc="Our team utilises cutting-edge methodologies and stays up-to-date with the latest technological advancements to ensure seamless operations and the flexibility to meet our clients' specific needs."
+                Images={Chose5}
               />
             </div>
             <div className={styles.benefit_container_content_bottom_right}>
               <ChooseCompo
-                Images={Chose1}
-                desc="By choosing our company, you gain access to a wealth of knowledge and
-        expertise cultivated over a decade of building complex custom
-        applications."
+                Images={Chose2}
+                desc="Our culture is driven by specialisation, which enables us to maintain a deep passion for staying at the forefront of our industry."
               />
               <ChooseCompo
-                Images={Chose1}
-                desc="By choosing our company, you gain access to a wealth of knowledge and
-        expertise cultivated over a decade of building complex custom
-        applications."
+                Images={Chose4}
+                desc="With a speedy and efficient delivery, we reduce risk and provide fast time-to-value to step out into the rapidly evolving market."
               />
             </div>
           </div>
@@ -191,6 +214,168 @@ const Home = (props) => {
           </div>
           <div className={styles.latestblog_container_content_bottom}>
             <Carousel2 />
+          </div>
+        </div>
+      </div>
+      {/* #################### Social Bar  Container ############################ */}
+      <div className={styles.socialbar_container}>
+        <div className={styles.socialbar_container_content}>
+          <div className={styles.socialbar_container_content_top}>
+            <p>IT solutions to power any size workload.</p>
+            <p>
+              Pricing and confidence to help drive your business forward with
+              industry-leading partnerships.
+            </p>
+          </div>
+          <div className={styles.socialbar_container_content_bottom}>
+            <img src={SocialIcon1} alt="Socials_Icons" />
+            <img src={SocialIcon2} alt="Socials_Icons" />
+            <img src={SocialIcon3} alt="Socials_Icons" />
+            <img src={SocialIcon4} alt="Socials_Icons" />
+            <img src={SocialIcon5} alt="Socials_Icons" />
+            <img src={SocialIcon6} alt="Socials_Icons" />
+            <img src={SocialIcon7} alt="Socials_Icons" />
+            <img src={SocialIcon8} alt="Socials_Icons" />
+            <img src={SocialIcon9} alt="Socials_Icons" />
+            <img src={SocialIcon12} alt="Socials_Icons" />
+            <img src={SocialIcon10} alt="Socials_Icons" />
+            <img src={SocialIcon11} alt="Socials_Icons" />
+          </div>
+        </div>
+      </div>
+      {/* #################### Togather Container ############################ */}
+      <div className={styles.togather_container}>
+        <div className={styles.togather_container_content}>
+          <span>Let's</span>
+          <h1>work togather.</h1>
+        </div>
+      </div>
+      {/* #################### Contact Container ############################ */}
+      <div className={styles.contact_container}>
+        <div className={styles.contact_container_content1}>
+          <div className={styles.contact_container_content1_left}>
+            <p>
+              Our team is always ready and willing to assist you in any way we
+              can.
+            </p>
+            <div className={styles.mailbox_container}>
+              <h1>Connect with us</h1>
+              <div className={styles.mailbox_container_mail}>
+                <img src={SIcons20} alt="Icons" />
+                <span>info@eliteitteam.com</span>
+              </div>
+              <div className={styles.mailbox_container_phone}>
+                <img src={SIcons21} alt="Icons" />
+                <span>UK: (+44) 3333 660 173</span>
+                <span>UK: (+44) 3333 660 173</span>
+              </div>
+              <div className={styles.mailbox_container_socailIcons}>
+                <img src={SIcons23} alt="Icons" />
+                <img src={SIcons24} alt="Icons" />
+                <img src={SIcons25} alt="Icons" />
+                <img src={SIcons26} alt="Icons" />
+                <img src={SIcons27} alt="Icons" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.contact_container_content1_right}>
+            <div className={styles.contact_container_content1_right_formbox}>
+              <div
+                className={
+                  styles.contact_container_content1_right_formbox_content
+                }
+              >
+                <Formik
+                  initialValues={{
+                    email: "",
+                    name: "",
+                    message: "",
+                  }}
+                  validationSchema={validate}
+                >
+                  {(formik) => (
+                    <div>
+                      <Form>
+                        <FormInput
+                          label="Full Name"
+                          name="name"
+                          type="text"
+                          place=""
+                        />
+                        <FormInput
+                          label="Email"
+                          name="email"
+                          type="email"
+                          place=""
+                        />
+                        <FormInput
+                          label="Message"
+                          name="Messge"
+                          type="text-area"
+                          place=""
+                        />
+                      </Form>
+                    </div>
+                  )}
+                </Formik>
+              </div>
+              <div className={styles.contact_container_content1_right_btn}>
+                <button>SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.contact_container_content2}>
+          <h5>Our offices are located in:</h5>
+          <div className={styles.contact_container_content2_location}>
+            <div className={styles.contact_container_content2_location_left}>
+              <div
+                className={
+                  styles.contact_container_content2_location_left_mapbox
+                }
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.8880046840973!2d-2.3551911234744187!3d53.398943272304535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac9ad98480bf%3A0x4a0ca539d08044c4!2s139%20Manchester%20Rd%2C%20Altrincham%20WA14%205NS%2C%20UK!5e0!3m2!1sen!2s!4v1686780609080!5m2!1sen!2s"
+                  height="450"
+                  style={{ border: "0", width: "509px" }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div
+                className={
+                  styles.contact_container_content2_location_left_address
+                }
+              >
+                <h1>UK</h1>
+                <p>139 Manchester Road, Altrincham, Cheshire, WA14 5NS</p>
+              </div>
+            </div>
+            <div className={styles.contact_container_content2_location_right}>
+              <div
+                className={
+                  styles.contact_container_content2_location_right_mapbox
+                }
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.37487781668!2d-74.0104716242405!3d40.70976327139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a181817a741%3A0x5d0d9ca92daf51b7!2s82%20Nassau%20St%2C%20New%20York%2C%20NY%2010038%2C%20USA!5e0!3m2!1sen!2s!4v1686781377289!5m2!1sen!2s"
+                  height="450"
+                  style={{ border: "0", width: "509px" }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div
+                className={
+                  styles.contact_container_content2_location_right_address
+                }
+              >
+                <h1>USA</h1>
+                <p>82 Nassau St, New York, NY 10038</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
