@@ -103,6 +103,20 @@ import AcordionImg1 from "./workAssets/acordionImg1.svg";
 import AcordionImg2 from "./workAssets/acordionImg2.svg";
 import AcordionImg3 from "./workAssets/acordionImg3.svg";
 import CHeader from "./careerAssets/careerheader.png";
+import CIcon1 from "./careerAssets/cIcons1.svg";
+import CIcon2 from "./careerAssets/cIcons2.svg";
+import CIcon3 from "./careerAssets/cIcons3.svg";
+import CIcon4 from "./careerAssets/cIcons4.svg";
+import CIcon5 from "./careerAssets/cIcons5.svg";
+import BHeader from "./blogAssets/bHeader.png";
+import Bicons1 from "./blogAssets/BIcons1.svg";
+import Bicons2 from "./blogAssets/BIcons2.svg";
+import Bicons3 from "./blogAssets/BIcons3.svg";
+import Bicons4 from "./blogAssets/BIcons4.svg";
+import Bicons5 from "./blogAssets/BIcons5.svg";
+import Bicons6 from "./blogAssets/BIcons6.svg";
+import Bicons7 from "./blogAssets/BIcons7.svg";
+import Blogm from "./blogAssets/blogm.png";
 
 export {
   Logo,
@@ -207,4 +221,18 @@ export {
   Imgmp4,
   Imgmp5,
   CHeader,
+  CIcon1,
+  CIcon2,
+  CIcon3,
+  CIcon4,
+  CIcon5,
+  BHeader,
+  Bicons1,
+  Bicons2,
+  Bicons3,
+  Bicons4,
+  Bicons5,
+  Bicons6,
+  Bicons7,
+  Blogm,
 };

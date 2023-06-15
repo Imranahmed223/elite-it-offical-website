@@ -1,6 +1,7 @@
 export { default as Home } from "./home/Home";
 export { default as About } from "./about/About";
 export { default as Work } from "./work/Work";
+export { default as Blog } from "./blog/Blog";
 export { default as Career } from "./careers/Career";
 // ************ Services pages ************
 export { default as Web } from "./services/webDevelopment/Web";

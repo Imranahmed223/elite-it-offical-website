@@ -1,9 +1,20 @@
 import React from "react";
 import styles from "./Career.module.scss";
 import { Navbar, SidebtnC } from "../../components";
-import { Arrowdown, CHeader } from "../../assets";
+import {
+  Arrowdown,
+  CHeader,
+  CIcon1,
+  CIcon2,
+  CIcon3,
+  CIcon4,
+  CIcon5,
+} from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 const Career = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.career_container}>
@@ -88,8 +99,87 @@ const Career = () => {
           </div>
         </div>
       </div>
+      {/* *********************** Career Support Section2 ************************* */}
+
+      <div className={styles.career_section2}>
+        <div className={styles.career_section2_content}>
+          <div className={styles.career_section2_content_left}>
+            <CareerSupport
+              image={CIcon1}
+              heading="Flexibility & Scaleability"
+              para="First and foremost, cloud computing offers flexibility and
+            scalability. This means that businesses can quickly adjust their
+            resources based on changing demands. Imagine you run a retail
+            business, and your sales spike during the holiday season. With cloud
+            computing, you can quickly scale your resources up to meet the
+            demand without worrying about investing in new hardware or
+            infrastructure."
+            />
+            <CareerSupport
+              image={CIcon3}
+              heading="Collaboration & Accessibility"
+              para="In addition to cost savings, cloud computing also improves collaboration and accessibility. With cloud-based tools, employees can access data and applications from any device with an internet connection. This means teams can work together seamlessly, regardless of their physical location. Cloud computing also improves accessibility, making it easier for employees to work remotely and stay connected to the office."
+            />
+            <CareerSupport
+              image={CIcon5}
+              heading="Disaster Recovery"
+              para="Cloud computing provides several advantages when it comes to disaster recovery. One of the main advantages is that cloud providers have multiple redundant data centres in different geographic locations. This redundancy ensures that data and applications are always available, even if one data centre is down.
+              Cloud providers also offer backup and recovery services as part of their platform, allowing businesses to easily schedule regular backups of their data and applications to the cloud, and quickly restore them in the event of a disaster. They also offer tools and services for testing disaster recovery plans, which can help businesses ensure that they are prepared for any scenario"
+            />
+          </div>
+          <div className={styles.career_section2_content_right}>
+            <CareerSupport
+              image={CIcon2}
+              heading="Cost Savings"
+              para="Another significant benefit of cloud computing is cost savings. Rather than purchasing and maintaining costly hardware and infrastructure, businesses can pay for the resources they need on a pay-as-you-go basis. This allows businesses to stay within their budget and save money in the long run."
+            />
+            <CareerSupport
+              image={CIcon4}
+              heading="Security & Reliability"
+              para="Moreover, cloud computing provides increased security and reliability. Cloud providers invest heavily in security measures to protect their customers' data, including encryption and multi-factor authentication. Additionally, cloud computing providers offer redundancy and failover mechanisms, ensuring that businesses can continue to operate even in the event of a hardware or infrastructure failure."
+            />
+          </div>
+        </div>
+      </div>
+      <div className={styles.desc}>
+        <p className="primary_para">
+          In conclusion, cloud computing has become an indispensable tool for
+          modern businesses. Its flexibility, scalability, cost savings,
+          improved collaboration and accessibility, and increased security and
+          reliability make it an essential solution for driving growth and
+          success. If you haven't already, it's time to consider adopting cloud
+          computing solutions for your business to stay ahead of the curve in
+          today's digital landscape.
+        </p>
+        <p className="primary_para">
+          With cloud computing, businesses can access computing resources from
+          anywhere in the world, improving efficiency, collaboration, and
+          productivity while reducing IT costs. Whether you're a small startup
+          or a large enterprise, cloud computing can help you achieve your
+          business goals and stay ahead of the competition.
+        </p>
+      </div>
+      <div className={styles.backbtn}>
+        <button onClick={() => navigate("/")}>Back to Home</button>
+      </div>
     </>
   );
 };
 
 export default Career;
+
+const CareerSupport = (props) => {
+  return (
+    <>
+      <div className={styles.careerSupport}>
+        <div className={styles.careerSupport_top}>
+          <img src={props.image} alt="Icons" />
+          <h1>{props.heading}</h1>
+        </div>
+        <div className={styles.careerSupport_bottom}>
+          <p className="primary_para">{props.para}</p>
+        </div>
+      </div>
+    </>
+  );
+};

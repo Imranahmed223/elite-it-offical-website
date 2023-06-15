@@ -1,0 +1,281 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.blog_container {
+  padding: 30px 0px;
+  background-image: url("../../assets/blogAssets/blogbg.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+  &_content {
+    width: 75%;
+    margin: auto;
+    &_middle {
+      position: relative;
+      margin-top: 50px;
+      img {
+        width: 100%;
+      }
+      &_bbox {
+        // margin-top: -100px;
+        // z-index: 99999;
+        position: absolute;
+        bottom: -30px;
+        left: 95px;
+        width: 958px;
+        height: 101px;
+        margin: auto;
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0.4) 100%
+        );
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(15px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          width: 90%;
+          margin: auto;
+          font-family: "Archivo Black";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 3.8rem;
+          line-height: 51px;
+          text-align: center;
+          background: linear-gradient(
+            91.52deg,
+            #4cc9f0 -9.54%,
+            #0000c8 35.19%,
+            #7209b7 107.13%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.advntage_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 141px;
+  & > *:not(:first-child) {
+    margin-top: 20px;
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: $textprimary;
+  }
+}
+
+//*********************** Blog Section2 *************************
+
+.blog_section2 {
+  margin-top: 85px;
+  padding: 1rem 0rem;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      width: 50.6rem;
+      & > *:not(:first-child) {
+        margin-top: 105px;
+      }
+    }
+    &_right {
+      width: 57.3rem;
+      & > *:not(:first-child) {
+        margin-top: 230px;
+      }
+    }
+  }
+}
+
+.blogSupport {
+  &_top {
+    display: flex;
+    align-items: center;
+    & > *:not(:first-child) {
+      margin-left: 2rem;
+    }
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 37px;
+      letter-spacing: -0.03em;
+      color: #0000c8;
+    }
+  }
+  &_bottom {
+    margin-top: 2.5rem;
+  }
+}
+
+//*********************** Blog Section2 *************************
+
+.tech_container {
+  padding: 1rem 0rem;
+  margin-top: 100px;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      width: 50.6rem;
+      & > *:not(:first-child) {
+        margin-top: 3.5rem;
+      }
+      &_top {
+        display: flex;
+        align-items: center;
+        & > *:not(:first-child) {
+          margin-left: 2rem;
+        }
+        h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 37px;
+          letter-spacing: -0.03em;
+          color: #0000c8;
+        }
+      }
+      ul {
+        list-style-position: inside;
+        li {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &_right {
+      width: 57.3rem;
+      //   & > *:not(:first-child) {
+      //     margin-top: 230px;
+      //   }
+      img {
+        width: 100%;
+        height: 118.4rem;
+      }
+    }
+  }
+}
+
+//*********************** Blog Section3 *************************
+
+.b_section3 {
+  padding: 1rem 0rem;
+  margin-top: 105px;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      width: 50.6rem;
+      & > *:not(:first-child) {
+        margin-top: 3.5rem;
+      }
+      &_top {
+        display: flex;
+        align-items: center;
+        & > *:not(:first-child) {
+          margin-left: 2rem;
+        }
+        h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 37px;
+          letter-spacing: -0.03em;
+          color: #0000c8;
+        }
+      }
+      ul {
+        list-style-position: inside;
+        li {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &_right {
+      width: 57.3rem;
+      & > *:not(:first-child) {
+        margin-top: 3rem;
+      }
+      &_top {
+        display: flex;
+        align-items: center;
+        & > *:not(:first-child) {
+          margin-left: 2rem;
+        }
+        h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 37px;
+          letter-spacing: -0.03em;
+          color: #0000c8;
+        }
+      }
+    }
+  }
+}
+
+//*********************** Blog Section4 *************************
+
+.b_section4 {
+  width: 75%;
+  margin: auto;
+  margin-top: 105px;
+  & > *:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}
+
+.backbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  button {
+    // padding: 1.5rem 3.2rem;
+    width: 196px;
+    height: 42px;
+    border: 1px solid #0000c8;
+    border-radius: 70px;
+    background: none;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 32px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #0000c8;
+    cursor: pointer;
+  }
+}

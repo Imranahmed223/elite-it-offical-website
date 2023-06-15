@@ -3,6 +3,11 @@
 
 .career_container {
   padding: 30px 0px;
+
+  background-image: url("../../assets/blogAssets/blogbg.svg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
   &_content {
     width: 75%;
     margin: auto;
@@ -148,5 +153,85 @@
         margin-top: 2.5rem;
       }
     }
+  }
+}
+
+//*********************** Career Section2 *************************
+
+.career_section2 {
+  padding: 1rem 0rem;
+  margin-top: 150px;
+  &_content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      width: 50.6rem;
+      & > *:not(:first-child) {
+        margin-top: 105px;
+      }
+    }
+    &_right {
+      width: 50.8rem;
+      & > *:not(:first-child) {
+        margin-top: 105px;
+      }
+    }
+  }
+}
+
+.careerSupport {
+  &_top {
+    display: flex;
+    align-items: center;
+    & > *:not(:first-child) {
+      margin-left: 2rem;
+    }
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 37px;
+      letter-spacing: -0.03em;
+      color: #0000c8;
+    }
+  }
+  &_bottom {
+    margin-top: 2.5rem;
+  }
+}
+
+.desc {
+  width: 75%;
+  margin: auto;
+  margin-top: 105px;
+  & > *:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}
+.backbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  button {
+    // padding: 1.5rem 3.2rem;
+    width: 196px;
+    height: 42px;
+    border: 1px solid #0000c8;
+    border-radius: 70px;
+    background: none;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 32px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #0000c8;
+    cursor: pointer;
   }
 }

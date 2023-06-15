@@ -62,7 +62,7 @@ const Navbar = () => {
 
           <Selecter className="editselector" data={dropdownData} />
           <button onClick={() => navigate("/work")}>Work</button>
-          <button>Blogs</button>
+          <button onClick={() => navigate("/blog")}>Blogs</button>
           <button onClick={() => navigate("/career")}>Careers</button>
         </div>
       </div>

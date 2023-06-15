@@ -2,6 +2,7 @@ import React from "react";
 import {
   AVR,
   About,
+  Blog,
   CCTV,
   Career,
   Cyber,
@@ -25,6 +26,7 @@ function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/career" element={<Career />} />
           // ************ Services pages ************
           <Route path="/web" element={<Web />} />
