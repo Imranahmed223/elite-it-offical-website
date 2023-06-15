@@ -3,6 +3,7 @@ import {
   AVR,
   About,
   CCTV,
+  Career,
   Cyber,
   Home,
   Hosted,
@@ -24,6 +25,7 @@ function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/career" element={<Career />} />
           // ************ Services pages ************
           <Route path="/web" element={<Web />} />
           <Route path="/itsupport" element={<ITsupport />} />

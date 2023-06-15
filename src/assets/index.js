@@ -102,6 +102,7 @@ import P2arrow from "./workAssets/pArrowUp.svg";
 import AcordionImg1 from "./workAssets/acordionImg1.svg";
 import AcordionImg2 from "./workAssets/acordionImg2.svg";
 import AcordionImg3 from "./workAssets/acordionImg3.svg";
+import CHeader from "./careerAssets/careerheader.png";
 
 export {
   Logo,
@@ -205,4 +206,5 @@ export {
   Imgmp3,
   Imgmp4,
   Imgmp5,
+  CHeader,
 };
