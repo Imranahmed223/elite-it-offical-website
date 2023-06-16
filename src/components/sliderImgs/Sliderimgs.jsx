@@ -20,7 +20,7 @@ const Sliderimgs = (props) => {
         <div
           className={styles.slider_container_overlay}
           style={{
-            width: Isopen ? "100%" : "8rem",
+            width: Isopen ? "100%" : "10rem",
             borderRadius: Isopen ? "45px" : "0px 45px 45px 0px",
             justifyContent: Isopen ? "left" : "",
             paddingLeft: Isopen ? "2rem" : "",
