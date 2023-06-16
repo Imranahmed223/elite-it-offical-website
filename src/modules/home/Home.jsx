@@ -137,12 +137,6 @@ const Home = (props) => {
                   bgImage={ScrolImg9}
                 />
               </div>
-              {/* <img src={simg2} alt="avator" /> */}
-              {/* <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" /> */}
             </div>
             <div className={styles.services_container_content_bottom}>
               <div className={styles.services_container_content_bottom_right}>
