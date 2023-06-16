@@ -29,6 +29,15 @@ import SIcons24 from "./homeAssets/SIcon24.svg";
 import SIcons25 from "./homeAssets/SIcon25.svg";
 import SIcons26 from "./homeAssets/SIcon26.svg";
 import SIcons27 from "./homeAssets/SIcon27.svg";
+import ScrolImg1 from "./homeAssets/scrolImg1.png";
+import ScrolImg2 from "./homeAssets/scrolImg2.png";
+import ScrolImg3 from "./homeAssets/scrolImg3.png";
+import ScrolImg4 from "./homeAssets/scrolImg4.png";
+import ScrolImg5 from "./homeAssets/scrolImg5.png";
+import ScrolImg6 from "./homeAssets/scrolImg6.png";
+import ScrolImg7 from "./homeAssets/scrolImg7.png";
+import ScrolImg8 from "./homeAssets/scrolImg8.png";
+import ScrolImg9 from "./homeAssets/scrolImg9.png";
 
 import MI1 from "./missionAssets/mi1.svg";
 import MI2 from "./missionAssets/mi2.svg";
@@ -142,6 +151,15 @@ export {
   SocialIcon8,
   SocialIcon9,
   SocialIcon12,
+  ScrolImg1,
+  ScrolImg2,
+  ScrolImg3,
+  ScrolImg4,
+  ScrolImg5,
+  ScrolImg6,
+  ScrolImg7,
+  ScrolImg8,
+  ScrolImg9,
   SIcons20,
   SIcons21,
   SIcons23,

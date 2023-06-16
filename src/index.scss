@@ -13,6 +13,8 @@
 // }
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
 @import "./Sass/_mixin.scss";
+@import "./Sass/variables";
+
 *,
 *::after,
 *::before {
@@ -43,9 +45,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
 // .slider_items_container {
 //   background-color: yellowgreen;
 //   // width: 500px;
@@ -56,3 +55,25 @@ a {
 //     }
 //   }
 // }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grdient;
+  border-radius: 1000rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $grdient;
+}

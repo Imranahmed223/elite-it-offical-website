@@ -9,6 +9,7 @@ import {
   MCardbox2,
   MCardbox3,
   Navbar,
+  SidebtnC,
   Sliderimgs,
 } from "../../components";
 import styles from "./Home.module.scss";
@@ -30,6 +31,15 @@ import {
   SIcons25,
   SIcons26,
   SIcons27,
+  ScrolImg1,
+  ScrolImg2,
+  ScrolImg3,
+  ScrolImg4,
+  ScrolImg5,
+  ScrolImg6,
+  ScrolImg7,
+  ScrolImg8,
+  ScrolImg9,
   SocialIcon1,
   SocialIcon10,
   SocialIcon11,
@@ -56,7 +66,7 @@ const Home = (props) => {
   return (
     <>
       <div className={styles.header_container}>
-        <button className={styles.sidebtn}>CONTACT US</button>
+        <SidebtnC />
         <div className={styles.header_container_content}>
           <Navbar />
           <div className={styles.header_container_content_middle}>
@@ -107,13 +117,32 @@ const Home = (props) => {
               <h1>your satisfaction</h1>
             </div>
             <div className={styles.services_container_content_middle}>
-              {/* <Sliderimgs /> */}
+              <div className={styles.services_container_content_middle_content}>
+                <Sliderimgs tittle="Web Development" bgImage={ScrolImg1} />
+                <Sliderimgs tittle="Cyber Security" bgImage={ScrolImg2} />
+                <Sliderimgs tittle="AR/VR" bgImage={ScrolImg3} />
+                <Sliderimgs
+                  tittle="Mobile App Development"
+                  bgImage={ScrolImg4}
+                />
+                <Sliderimgs tittle="VOIP & BroadBand" bgImage={ScrolImg5} />
+                <Sliderimgs
+                  tittle="Hosted Services & Virtualisation"
+                  bgImage={ScrolImg6}
+                />
+                <Sliderimgs tittle="Networking & Wifi" bgImage={ScrolImg7} />
+                <Sliderimgs tittle="IT Support" bgImage={ScrolImg8} />
+                <Sliderimgs
+                  tittle="Hardware & Software Procurement"
+                  bgImage={ScrolImg9}
+                />
+              </div>
+              {/* <img src={simg2} alt="avator" /> */}
+              {/* <img src={simg2} alt="avator" />
               <img src={simg2} alt="avator" />
               <img src={simg2} alt="avator" />
               <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
-              <img src={simg2} alt="avator" />
+              <img src={simg2} alt="avator" /> */}
             </div>
             <div className={styles.services_container_content_bottom}>
               <div className={styles.services_container_content_bottom_right}>

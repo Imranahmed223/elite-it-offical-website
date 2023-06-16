@@ -182,76 +182,82 @@
 }
 
 //*********************** Blog Section3 *************************
+.blog_bg2 {
+  background-image: url("../../assets/blogAssets/blogbg2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .b_section3 {
+    padding: 1rem 0rem;
+    margin-top: 105px;
 
-.b_section3 {
-  padding: 1rem 0rem;
-  margin-top: 105px;
-  &_content {
-    width: 75%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    &_left {
-      width: 50.6rem;
-      & > *:not(:first-child) {
-        margin-top: 3.5rem;
-      }
-      &_top {
-        display: flex;
-        align-items: center;
+    &_content {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      &_left {
+        width: 50.6rem;
         & > *:not(:first-child) {
-          margin-left: 2rem;
+          margin-top: 3.5rem;
         }
-        h1 {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 2.4rem;
-          line-height: 37px;
-          letter-spacing: -0.03em;
-          color: #0000c8;
+        &_top {
+          display: flex;
+          align-items: center;
+          & > *:not(:first-child) {
+            margin-left: 2rem;
+          }
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 37px;
+            letter-spacing: -0.03em;
+            color: #0000c8;
+          }
+        }
+        ul {
+          list-style-position: inside;
+          li {
+            margin-top: 2rem;
+          }
         }
       }
-      ul {
-        list-style-position: inside;
-        li {
-          margin-top: 2rem;
-        }
-      }
-    }
-    &_right {
-      width: 57.3rem;
-      & > *:not(:first-child) {
-        margin-top: 3rem;
-      }
-      &_top {
-        display: flex;
-        align-items: center;
+      &_right {
+        width: 57.3rem;
         & > *:not(:first-child) {
-          margin-left: 2rem;
+          margin-top: 3rem;
         }
-        h1 {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 2.4rem;
-          line-height: 37px;
-          letter-spacing: -0.03em;
-          color: #0000c8;
+        &_top {
+          display: flex;
+          align-items: center;
+          & > *:not(:first-child) {
+            margin-left: 2rem;
+          }
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 37px;
+            letter-spacing: -0.03em;
+            color: #0000c8;
+          }
         }
       }
     }
   }
-}
 
-//*********************** Blog Section4 *************************
+  //*********************** Blog Section4 *************************
 
-.b_section4 {
-  width: 75%;
-  margin: auto;
-  margin-top: 105px;
-  & > *:not(:first-child) {
-    margin-top: 2.5rem;
+  .b_section4 {
+    width: 75%;
+    margin: auto;
+    margin-top: 105px;
+    & > *:not(:first-child) {
+      margin-top: 2.5rem;
+    }
   }
 }
 

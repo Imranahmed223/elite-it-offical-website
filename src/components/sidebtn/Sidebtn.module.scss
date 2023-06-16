@@ -1,7 +1,55 @@
-.sidebtn {
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+.sidebtn_container {
+  // padding: 1rem 0rem;
+  z-index: 999999999999;
   position: fixed;
   right: 0%;
-  top: 270px;
-  z-index: 99999;
-  cursor: pointer;
+  &_content {
+    display: flex;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+    &_contactbox {
+      display: none;
+      width: 509px;
+      height: 95vh;
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.23) 100%
+      );
+      box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(25.5px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 27px 0px 0px 27px;
+      &_content {
+        padding-top: 90px;
+        width: 85%;
+        margin: auto;
+        &_btn {
+          display: flex;
+          justify-content: right;
+          button {
+            width: 320.84px;
+            height: 79px;
+            background-image: $grdient;
+            border: none;
+            border-radius: 100px 0px 0px 100px;
+
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.4rem;
+            line-height: 16px;
+            cursor: pointer;
+            letter-spacing: 0.16em;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
 }

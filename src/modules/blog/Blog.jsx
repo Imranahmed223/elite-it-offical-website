@@ -128,70 +128,75 @@ Being proactive in your communication is key, so don’t hesitate to reach out t
         </div>
       </div>
       {/* *********************** Blog Section3 ********************** */}
-      <div className={styles.b_section3}>
-        <div className={styles.b_section3_content}>
-          <div className={styles.b_section3_content_left}>
-            <div className={styles.b_section3_content_left_top}>
-              <img src={Bicons6} alt="Icons" />
-              <h1>Avoid Distractions</h1>
+      <div className={styles.blog_bg2}>
+        <div className={styles.b_section3}>
+          <div className={styles.b_section3_content}>
+            <div className={styles.b_section3_content_left}>
+              <div className={styles.b_section3_content_left_top}>
+                <img src={Bicons6} alt="Icons" />
+                <h1>Avoid Distractions</h1>
+              </div>
+              <ul className="primary_para">
+                Working remotely can be a challenging experience as there are
+                many distractions that may disrupt your productivity. To avoid
+                such distractions, you can take certain measures such as:
+                <li>
+                  Establishing a dedicated workspace that is free from
+                  distractions
+                </li>
+                <li> Creating and sticking to a work schedule </li>
+                <li>
+                  Avoiding multitasking and focusing on one task at a time
+                </li>
+                <li>Minimising digital distractions </li>
+                <li>
+                  {" "}
+                  Communicating with family and friends about your work schedule
+                </li>
+                <li> Taking regular breaks to improve focus</li>
+                <li>Using productivity tools</li>
+              </ul>
             </div>
-            <ul className="primary_para">
-              Working remotely can be a challenging experience as there are many
-              distractions that may disrupt your productivity. To avoid such
-              distractions, you can take certain measures such as:
-              <li>
-                Establishing a dedicated workspace that is free from
-                distractions
-              </li>
-              <li> Creating and sticking to a work schedule </li>
-              <li>Avoiding multitasking and focusing on one task at a time</li>
-              <li>Minimising digital distractions </li>
-              <li>
-                {" "}
-                Communicating with family and friends about your work schedule
-              </li>
-              <li> Taking regular breaks to improve focus</li>
-              <li>Using productivity tools</li>
-            </ul>
-          </div>
-          <div className={styles.b_section3_content_right}>
-            <div className={styles.b_section3_content_right_top}>
-              <img src={Bicons7} alt="Icons" />
-              <h1>Prioritise your health</h1>
+            <div className={styles.b_section3_content_right}>
+              <div className={styles.b_section3_content_right_top}>
+                <img src={Bicons7} alt="Icons" />
+                <h1>Prioritise your health</h1>
+              </div>
+              <p className="primary_para">
+                Ensuring that you prioritise your health while working remotely
+                is essential to maintain both your well-being and productivity.
+                It’s important to establish clear work hours and adhere to them,
+                as this will enable you to set aside time for yourself outside
+                of work hours. Set up a workspace that is ergonomically designed
+                and comfortable to prevent strain or injury. 
+              </p>
+              <p className="primary_para">
+                Make sure your workspace has enough lighting and proper
+                ventilation to promote a healthy work environment. Additionally,
+                maintain a healthy routine that includes exercise, healthy
+                meals, and sufficient sleep.
+              </p>
             </div>
-            <p className="primary_para">
-              Ensuring that you prioritise your health while working remotely is
-              essential to maintain both your well-being and productivity. It’s
-              important to establish clear work hours and adhere to them, as
-              this will enable you to set aside time for yourself outside of
-              work hours. Set up a workspace that is ergonomically designed and
-              comfortable to prevent strain or injury. 
-            </p>
-            <p className="primary_para">
-              Make sure your workspace has enough lighting and proper
-              ventilation to promote a healthy work environment. Additionally,
-              maintain a healthy routine that includes exercise, healthy meals,
-              and sufficient sleep.
-            </p>
           </div>
         </div>
-      </div>
-      {/* *********************** Blog Section4 ********************** */}
-      <div className={styles.b_section4}>
-        <p className="primary_para">
-          To sum up, remote work has become an integral part of our daily lives,
-          and with the correct strategies in place, it can lead to a productive
-          and gratifying experience. By following the above tips, you can
-          optimise your remote work setup, enhance your time management skills,
-          establish a healthy work-life balance, and maximise your efficiency. 
-        </p>
-        <p className="primary_para">
-          It is crucial to prioritise your physical and mental health, remain
-          connected with your colleagues, and take a proactive approach to
-          manage your tasks. With the right mindset and attitude, remote work
-          can be a smart and fulfilling choice for those seeking to improve
-          their work situation. 
-        </p>
+        {/* *********************** Blog Section4 ********************** */}
+        <div className={styles.b_section4}>
+          <p className="primary_para">
+            To sum up, remote work has become an integral part of our daily
+            lives, and with the correct strategies in place, it can lead to a
+            productive and gratifying experience. By following the above tips,
+            you can optimise your remote work setup, enhance your time
+            management skills, establish a healthy work-life balance, and
+            maximise your efficiency. 
+          </p>
+          <p className="primary_para">
+            It is crucial to prioritise your physical and mental health, remain
+            connected with your colleagues, and take a proactive approach to
+            manage your tasks. With the right mindset and attitude, remote work
+            can be a smart and fulfilling choice for those seeking to improve
+            their work situation. 
+          </p>
+        </div>
       </div>
       <div className={styles.backbtn}>
         <button onClick={() => navigate("/")}>Back to Home</button>

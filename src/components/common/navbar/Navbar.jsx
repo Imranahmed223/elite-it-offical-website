@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import { Logo } from "../../../assets";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Selecter } from "../..";
 
 const Navbar = () => {
@@ -58,6 +58,7 @@ const Navbar = () => {
         <img src={Logo} alt="Logo" />
         <div className={styles.navbar_container_menu}>
           <button onClick={() => navigate("/")}>Home</button>
+
           <button onClick={() => navigate("/about")}>About</button>
 
           <Selecter className="editselector" data={dropdownData} />
