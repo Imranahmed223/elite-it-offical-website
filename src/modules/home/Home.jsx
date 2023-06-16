@@ -56,6 +56,7 @@ import {
   simg1,
   simg2,
 } from "../../assets";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = (props) => {
   const validate = Yup.object({
@@ -118,24 +119,42 @@ const Home = (props) => {
             </div>
             <div className={styles.services_container_content_middle}>
               <div className={styles.services_container_content_middle_content}>
-                <Sliderimgs tittle="Web Development" bgImage={ScrolImg1} />
-                <Sliderimgs tittle="Cyber Security" bgImage={ScrolImg2} />
-                <Sliderimgs tittle="AR/VR" bgImage={ScrolImg3} />
-                <Sliderimgs
-                  tittle="Mobile App Development"
-                  bgImage={ScrolImg4}
-                />
-                <Sliderimgs tittle="VOIP & BroadBand" bgImage={ScrolImg5} />
-                <Sliderimgs
-                  tittle="Hosted Services & Virtualisation"
-                  bgImage={ScrolImg6}
-                />
-                <Sliderimgs tittle="Networking & Wifi" bgImage={ScrolImg7} />
-                <Sliderimgs tittle="IT Support" bgImage={ScrolImg8} />
-                <Sliderimgs
-                  tittle="Hardware & Software Procurement"
-                  bgImage={ScrolImg9}
-                />
+                <Link to="/web">
+                  <Sliderimgs tittle="Web Development" bgImage={ScrolImg1} />
+                </Link>
+                <Link to="/cyber">
+                  <Sliderimgs tittle="Cyber Security" bgImage={ScrolImg2} />
+                </Link>
+                <Link to="/arvr">
+                  <Sliderimgs tittle="AR/VR" bgImage={ScrolImg3} />
+                </Link>
+                <Link to="/mobileapp">
+                  <Sliderimgs
+                    tittle="Mobile App Development"
+                    bgImage={ScrolImg4}
+                  />
+                </Link>
+                <Link to="/voip">
+                  <Sliderimgs tittle="VOIP & BroadBand" bgImage={ScrolImg5} />
+                </Link>
+                <Link to="/hosted">
+                  <Sliderimgs
+                    tittle="Hosted Services & Virtualisation"
+                    bgImage={ScrolImg6}
+                  />
+                </Link>
+                <Link to="/networking">
+                  <Sliderimgs tittle="Networking & Wifi" bgImage={ScrolImg7} />
+                </Link>
+                <Link to="/itsupport">
+                  <Sliderimgs tittle="IT Support" bgImage={ScrolImg8} />
+                </Link>
+                <Link to="/procurement">
+                  <Sliderimgs
+                    tittle="Hardware & Software Procurement"
+                    bgImage={ScrolImg9}
+                  />
+                </Link>
               </div>
             </div>
             <div className={styles.services_container_content_bottom}>
@@ -162,18 +181,31 @@ const Home = (props) => {
             <div className={styles.mission_container_content_left_b1}>
               <h1>See our mission</h1>
               <span>in action</span>
-              <div className={styles.imglayout}>
-                <h1>THE DIET APP</h1>
-              </div>
+
+              <Link to="/work">
+                <div className={styles.imglayout}>
+                  <h1>THE DIET APP</h1>
+                </div>
+              </Link>
             </div>
-            <MCardbox2 imgM={MI5} imgTitle="COOK IN THE NOOK WEBSITE" />
-            <button>View More</button>
+            <Link to="/work">
+              <MCardbox2 imgM={MI5} imgTitle="COOK IN THE NOOK WEBSITE" />
+            </Link>
+            <Link to="/work">
+              <button>View More</button>
+            </Link>
           </div>
           <div className={styles.mission_container_content_right}>
             {/* ###### Create Mission Cardboxs in the components folder ######### */}
-            <MCardbox />
-            <MCardbox2 imgM={MI3} imgTitle="VIVAWELL WEBSITE" />
-            <MCardbox3 />
+            <Link to="/work">
+              <MCardbox />
+            </Link>
+            <Link to="/work">
+              <MCardbox2 imgM={MI3} imgTitle="VIVAWELL WEBSITE" />
+            </Link>
+            <Link to="/work">
+              <MCardbox3 />
+            </Link>
           </div>
         </div>
       </div>
