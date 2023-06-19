@@ -325,11 +325,31 @@ const Home = (props) => {
                 <span>UK: (+44) 3333 660 173</span>
               </div>
               <div className={styles.mailbox_container_socailIcons}>
-                <img src={SIcons23} alt="Icons" />
-                <img src={SIcons24} alt="Icons" />
-                <img src={SIcons25} alt="Icons" />
-                <img src={SIcons26} alt="Icons" />
-                <img src={SIcons27} alt="Icons" />
+                <a
+                  href="https://www.linkedin.com/company/elite-it-team/?viewAsMember=true"
+                  target="_blank"
+                >
+                  <img src={SIcons23} alt="Icons" />
+                </a>
+                <a
+                  href=" https://www.facebook.com/eliteitteam"
+                  target="__blank"
+                >
+                  <img src={SIcons24} alt="Icons" />
+                </a>
+                <a
+                  href=" https://www.instagram.com/eliteitteam/"
+                  target="___blank"
+                >
+                  <img src={SIcons26} alt="Icons" />
+                </a>
+                <a
+                  href=" Elite IT Team (@EliteITteam1) / Twitter"
+                  target="____blank"
+                >
+                  <img src={SIcons27} alt="Icons" />
+                </a>
+                {/* <img src={SIcons25} alt="Icons" /> */}
               </div>
             </div>
           </div>

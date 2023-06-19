@@ -84,10 +84,19 @@
   }
 }
 //*********************** Career Section1 *************************
+.career_bgImage {
+  background-image: url("../../assets/careerAssets/bgcareer2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-color: #0000c8;
+}
+//*********************** Career Section1 *************************
 
 .career_section1 {
   padding: 1rem 0rem;
   margin-top: 82px;
+  // background-color: #4cc9f0;
   &_content {
     width: 75%;
     margin: auto;
