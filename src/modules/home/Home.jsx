@@ -343,10 +343,7 @@ const Home = (props) => {
                 >
                   <img src={SIcons26} alt="Icons" />
                 </a>
-                <a
-                  href=" Elite IT Team (@EliteITteam1) / Twitter"
-                  target="____blank"
-                >
+                <a href="  https://twitter.com/EliteITteam1" target="__blank">
                   <img src={SIcons27} alt="Icons" />
                 </a>
                 {/* <img src={SIcons25} alt="Icons" /> */}
