@@ -219,7 +219,7 @@
         margin: auto;
         padding-top: 98px;
         overflow-x: auto;
-
+        padding-bottom: 2rem;
         &_content {
           width: 1400px;
           display: flex;
@@ -267,6 +267,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #4cc9f0;
   &_content {
     width: 75%;
     margin: auto;
@@ -280,7 +281,7 @@
     }
     &_left {
       width: 46%;
-
+      // background-color: yellow;
       & > *:not(:first-child) {
         margin-top: 3rem;
       }
@@ -349,13 +350,14 @@
 
 .imglayout {
   margin-top: 127px;
-  width: 495px;
+  width: 44rem;
   height: 643px;
   background-image: url("../../assets/missionAssets/mi1.svg");
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-out;
+  border-radius: 30px;
 
   h1 {
     font-weight: 600;
