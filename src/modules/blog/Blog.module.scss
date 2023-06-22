@@ -21,7 +21,8 @@
         // z-index: 99999;
         position: absolute;
         bottom: -30px;
-        left: 95px;
+        left: 0%;
+        right: 0%;
         width: 958px;
         height: 101px;
         margin: auto;
@@ -100,7 +101,7 @@
       }
     }
     &_right {
-      width: 57.3rem;
+      width: 50.7rem;
       & > *:not(:first-child) {
         margin-top: 230px;
       }
@@ -169,7 +170,7 @@
       }
     }
     &_right {
-      width: 57.3rem;
+      width: 50.7rem;
       //   & > *:not(:first-child) {
       //     margin-top: 230px;
       //   }
@@ -225,7 +226,7 @@
         }
       }
       &_right {
-        width: 57.3rem;
+        width: 50.7rem;
         & > *:not(:first-child) {
           margin-top: 3rem;
         }

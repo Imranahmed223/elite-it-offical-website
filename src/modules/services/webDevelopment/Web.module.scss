@@ -40,7 +40,7 @@
     //* **************** Section3 **************** *
 
     &_section3 {
-      margin-top: 72px;
+      margin-top: 82px;
       // background-color: red;
       h1 {
         font-family: "Poppins";
@@ -54,12 +54,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -16px;
+        // background-color: palevioletred;
+        margin-top: -30px;
         & > *:not(:first-child) {
           margin-left: 120px;
         }
         &_left {
           width: 58.6rem;
+          // background-color: gray;
+          margin-top: -3rem;
           p {
             font-family: "Poppins";
             font-style: normal;
@@ -70,6 +73,10 @@
             letter-spacing: -0.03em;
             color: #fafafa;
           }
+        }
+        &_right{
+          // background-color: gold;
+          margin-top: -3rem;
         }
       }
     }
@@ -191,7 +198,7 @@
   backdrop-filter: blur(15px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
   display: flex;
   align-items: center;
   justify-content: right;

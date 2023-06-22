@@ -22,7 +22,8 @@
         // z-index: 99999;
         position: absolute;
         bottom: -30px;
-        left: 95px;
+        left: 0%;
+        right: 0%;
         width: 958px;
         height: 143px;
         margin: auto;
@@ -191,6 +192,7 @@
 }
 
 .careerSupport {
+  // background-color: lightblue;
   &_top {
     display: flex;
     align-items: center;
