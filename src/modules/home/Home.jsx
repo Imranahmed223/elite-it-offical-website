@@ -409,9 +409,9 @@ const Home = (props) => {
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.8880046840973!2d-2.3551911234744187!3d53.398943272304535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bac9ad98480bf%3A0x4a0ca539d08044c4!2s139%20Manchester%20Rd%2C%20Altrincham%20WA14%205NS%2C%20UK!5e0!3m2!1sen!2s!4v1686780609080!5m2!1sen!2s"
                   height="450"
-                  style={{ border: "0", width: "509px" }}
+                  style={{ border: "0", width: "100%" }}
                   allowfullscreen=""
-                  loading="lazy"
+                  // loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
@@ -433,9 +433,9 @@ const Home = (props) => {
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.37487781668!2d-74.0104716242405!3d40.70976327139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a181817a741%3A0x5d0d9ca92daf51b7!2s82%20Nassau%20St%2C%20New%20York%2C%20NY%2010038%2C%20USA!5e0!3m2!1sen!2s!4v1686781377289!5m2!1sen!2s"
                   height="450"
-                  style={{ border: "0", width: "509px" }}
+                  style={{ border: "0", width: "100%" }}
                   allowfullscreen=""
-                  loading="lazy"
+                  // loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
