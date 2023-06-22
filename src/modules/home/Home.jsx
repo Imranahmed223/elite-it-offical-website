@@ -105,7 +105,9 @@ const Home = (props) => {
                 IT infrastructure and provide useful recommendations to put in
                 place now and in the future.
               </p>
+              <Link to="/about">
               <button>LEARN MORE</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -189,7 +191,9 @@ const Home = (props) => {
               </Link>
             </div>
             <Link to="/work">
-              <MCardbox2 imgM={MI5} imgTitle="COOK IN THE NOOK WEBSITE" />
+              <MCardbox2 imgM={MI5} imgTitle="COOK IN THE NOOK WEBSITE" 
+              style={{height:"20rem"}}
+              />
             </Link>
             <Link to="/work">
               <button>View More</button>
