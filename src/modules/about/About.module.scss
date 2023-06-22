@@ -16,6 +16,7 @@
     margin: auto;
     &_top {
       margin-top: 159px;
+      // background-color: red;
       h3 {
         font-family: "Poppins";
         font-style: normal;
@@ -38,11 +39,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      // background-color: red;
       &_left {
         width: 58.6rem;
         padding: 0.5rem 0rem;
         // background-color: aqua;
-        margin-top: 90px;
+        margin-top: 60px;
         p {
           font-family: "Poppins";
           font-style: normal;
@@ -55,7 +57,7 @@
         }
       }
       &_right {
-        margin-bottom: -10rem;
+        margin-bottom: -7rem;
         // background-color: #0000c8;
       }
     }
