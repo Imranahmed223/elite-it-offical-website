@@ -11,14 +11,30 @@
   background-size: cover;
   //   background-image: url("../../../assets/headerAssets/wline2.svg");
   padding-top: 3rem;
+  @include respond(tab-land) {
+    background-color: green;
+  }
+  @include respond(tab-port) {
+    background-color: red;
+    background-image: none;
+  }
+  @include respond(phone) {
+    background-color: yellow;
+    background-image: none;
+  }
   &_content {
     width: 75%;
     margin: auto;
     // padding: 0.5rem 0rem;
     // background-color: palevioletred;
+    @include respond(tab-land) {
+      // background-color: green;
+      width: 85%;
+      margin: auto;
+    }
 
     &_middle {
-      margin-top: 161px;
+      margin-top: 16.1rem;
       h3 {
         font-family: "Poppins";
         font-style: normal;
@@ -39,7 +55,7 @@
         -webkit-text-fill-color: transparent;
       }
       &_btn {
-        margin-top: 63px;
+        margin-top: 6.3rem;
         button {
           width: 22rem;
           background: none;
@@ -65,7 +81,8 @@
     margin: auto;
     z-index: 99999999;
     position: absolute;
-    left: 12%;
+    left: 0%;
+    right: 0%;
     bottom: -50px;
     display: flex;
     align-items: center;
@@ -84,7 +101,7 @@
   }
 }
 .percent_container {
-  width: 25%;
+  width: 25rem;
   // background-color: aqua;
   h1 {
     text-align: center;
@@ -114,6 +131,7 @@
   background-image: url("../../assets/homeAssets/bg1.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   .about_container {
     position: relative;
     padding: 2rem 0rem;
@@ -122,9 +140,14 @@
       width: 75%;
       margin: auto;
       padding: 2rem 0rem;
+      @include respond(tab-land) {
+        // background-color: green;
+        width: 85%;
+        margin: auto;
+      }
       &_left {
         width: 50%;
-        margin-top: 150px;
+        margin-top: 15rem;
         span {
           font-family: "Poppins";
           font-weight: 400;
@@ -133,7 +156,7 @@
           color: white;
         }
         h3 {
-          margin-top: 30px;
+          margin-top: 3rem;
           font-family: "Poppins";
           font-weight: 400;
           font-size: 5.1rem;
@@ -148,7 +171,7 @@
         }
         p {
           width: 90%;
-          margin-top: 56px;
+          margin-top: 5.6rem;
           font-family: "Poppins";
           font-weight: 500;
           font-size: 1.8rem;
@@ -158,7 +181,7 @@
           color: #ffffff;
         }
         button {
-          margin-top: 57px;
+          margin-top: 5.7rem;
           background: none;
           border: 1px solid #4cc9f0;
           border-radius: 70px;
@@ -179,6 +202,12 @@
       position: absolute;
       right: 0%;
       top: 39%;
+      @include respond(tab-land) {
+        width: 62rem;
+      }
+      @include respond(tab-port) {
+        width: 42rem;
+      }
     }
   }
   // ************************* Home Middle Service Container ***********************************
@@ -189,6 +218,11 @@
     &_content {
       width: 75%;
       margin: auto;
+      @include respond(tab-land) {
+        // background-color: green;
+        width: 85%;
+        margin: auto;
+      }
       &_top {
         span {
           font-family: "Poppins";
@@ -237,6 +271,7 @@
         // background-color: lawngreen;
         &_right {
           width: 40%;
+          // background-color: #4cc9f0;
           h1 {
             font-family: "Poppins";
             font-weight: 400;
@@ -275,6 +310,11 @@
     justify-content: center;
     padding: 0.5rem 0rem;
     // background-color: #4cc9f0;
+    @include respond(tab-land) {
+      // background-color: green;
+      width: 85%;
+      margin: auto;
+    }
     margin-bottom: 150px;
     & > *:not(:first-child) {
       margin-left: 6rem;
@@ -354,7 +394,7 @@
 .imglayout {
   margin-top: 120px;
   width: 48rem;
-  height: 643px;
+  height: 64rem;
   background-image: url("../../assets/missionAssets/mi1.svg");
   display: flex;
   align-items: center;
@@ -469,6 +509,11 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 350px;
+    @include respond(tab-land) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
     &_top {
       padding: 3rem 0rem;
       margin-top: 60px;
@@ -503,6 +548,9 @@
       display: flex;
       justify-content: space-between;
       // background-color: red;
+      @include respond(tab-land) {
+        width: 75%;
+      }
       &_left {
         & > *:not(:first-child) {
           margin-top: 150px;
@@ -545,6 +593,9 @@
     width: 80%;
     margin: auto;
     padding: 1rem 0rem;
+    @include respond(tab-land) {
+      width: 85%;
+    }
     &_top {
       display: flex;
       flex-direction: column;
@@ -616,6 +667,18 @@
       & > *:not(:first-child) {
         margin-left: 2rem;
       }
+      @include respond(tab-land) {
+        // background-color: red;
+        img {
+          width: 10rem;
+        }
+      }
+      @include respond(tab-port) {
+        // background-color: red;
+        img {
+          width: 8rem;
+        }
+      }
     }
   }
 }
@@ -628,6 +691,9 @@
   &_content {
     width: 80%;
     margin: auto;
+    @include respond(tab-land) {
+      width: 85%;
+    }
     span {
       font-family: "Poppins";
       font-style: normal;
@@ -668,6 +734,9 @@
     //   margin-left: 62px;
     // }
     // background-color: yellow;
+    @include respond(tab-land) {
+      width: 85%;
+    }
     &_left {
       width: 47%;
       // margin-left: -50px;
@@ -684,7 +753,7 @@
     }
     &_right {
       //  width: 47%;
-      margin-top: -120px;
+      margin-top: -12rem;
       padding: 1rem 0rem;
       // background-color: palevioletred;
       &_formbox {
@@ -698,7 +767,7 @@
         /* Note: backdrop-filter has minimal browser support */
 
         border-radius: 27px;
-        width: 488px;
+        width: 48.8rem;
         height: 808px;
         &_content {
           padding-top: 120px;
@@ -710,7 +779,7 @@
         display: flex;
         justify-content: right;
         button {
-          width: 320.84px;
+          width: 35rem;
           height: 79px;
           background-image: $grdient;
           border: none;
@@ -733,6 +802,9 @@
     margin: auto;
     padding: 2rem 0rem;
     // background-color: lavenderblush;
+    @include respond(tab-land) {
+      width: 85%;
+    }
     h5 {
       font-family: "Poppins";
       font-style: normal;
@@ -753,7 +825,7 @@
       // background-color: red;
       &_left {
         width: 47%;
-        padding: .5rem 0rem;
+        padding: 0.5rem 0rem;
         // background-color: lightcoral;
         &_mapbox {
           width: 100%;
@@ -793,7 +865,7 @@
       }
       &_right {
         width: 47%;
-        padding: .5rem 0rem;
+        padding: 0.5rem 0rem;
         // background-color: lightgreen;
         &_mapbox {
           width: 100%;

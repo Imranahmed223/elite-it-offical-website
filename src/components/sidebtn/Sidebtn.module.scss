@@ -6,6 +6,7 @@
   position: fixed;
   right: 0%;
   &_content {
+    height: 100vh;
     display: flex;
     align-items: center;
     img {
@@ -13,7 +14,7 @@
     }
     &_contactbox {
       display: none;
-      width: 509px;
+      width: 50.9rem;
       height: 95vh;
       background: linear-gradient(
         180deg,
