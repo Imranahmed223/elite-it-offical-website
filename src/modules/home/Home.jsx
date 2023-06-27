@@ -75,10 +75,12 @@ const Home = (props) => {
             <h1>meaningful designs.</h1>
 
             <div className={styles.header_container_content_middle_btn}>
+              <Link to='/work'>
               <button>
                 View our work
                 <img src={arrow1} alt="Icon" />
               </button>
+              </Link>
             </div>
           </div>
         </div>
