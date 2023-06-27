@@ -154,7 +154,7 @@
   .about_container {
     position: relative;
     padding: 2rem 0rem;
-    // background: linear-gradient(0deg, #0000c8, #0000c8);
+    background: linear-gradient(0deg, #0000c8, #0000c8);
     &_content {
       width: 75%;
       margin: auto;
@@ -164,9 +164,16 @@
         width: 85%;
         margin: auto;
       }
+
       &_left {
         width: 50%;
         margin-top: 15rem;
+        @include respond(tab-port){
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
         span {
           font-family: "Poppins";
           font-weight: 400;
@@ -225,7 +232,8 @@
         width: 62rem;
       }
       @include respond(tab-port) {
-        width: 42rem;
+        
+        display: none;
       }
     }
   }
@@ -288,9 +296,15 @@
         margin-top: 185px;
         padding: 0.5rem 0rem;
         // background-color: lawngreen;
+        @include respond(tab-port){
+         justify-content: left; 
+        }
         &_right {
           width: 40%;
           // background-color: #4cc9f0;
+          @include respond(tab-port){
+          width: 100%;
+          }
           h1 {
             font-family: "Poppins";
             font-weight: 400;
@@ -322,6 +336,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   // background-color: #4cc9f0;
+  @include respond(tab-port){
+    display: none;
+  }
   &_content {
     width: 75%;
     margin: auto;
@@ -570,6 +587,9 @@
       @include respond(tab-land) {
         width: 75%;
       }
+      @include respond(tab-port){
+        width: 85%;
+      }
       &_left {
         & > *:not(:first-child) {
           margin-top: 150px;
@@ -755,11 +775,23 @@
     // background-color: yellow;
     @include respond(tab-land) {
       width: 85%;
+      flex-direction: column;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
     }
     &_left {
       width: 47%;
       // margin-left: -50px;
       // background-color: green;
+      @include respond(tab-port){
+        width: 75%;
+        // margin: auto;
+      }
+      @include respond(tab-land){
+        width: 75%;
+        // margin: auto;
+      }
       p {
         font-family: "Poppins";
         font-style: normal;
@@ -775,6 +807,12 @@
       margin-top: -12rem;
       padding: 1rem 0rem;
       // background-color: palevioletred;
+      @include respond(tab-port){
+        margin-top: 1rem;
+      }
+      @include respond(tab-land){
+        margin-top: 1rem;
+      }
       &_formbox {
         background: linear-gradient(
           180deg,
@@ -842,10 +880,24 @@
       display: flex;
       justify-content: space-between;
       // background-color: red;
+      @include respond(tab-port){
+        flex-direction: column;
+      }
+      @include respond(tab-land){
+        flex-direction: column;
+      }
       &_left {
         width: 47%;
         padding: 0.5rem 0rem;
         // background-color: lightcoral;
+        
+        @include respond(tab-land){
+          width: 75%;
+        }
+        
+        @include respond(tab-port){
+          width: 75%;
+        }
         &_mapbox {
           width: 100%;
           height: 45.4rem;
@@ -886,6 +938,14 @@
         width: 47%;
         padding: 0.5rem 0rem;
         // background-color: lightgreen;
+        @include respond(tab-land){
+          width: 75%;
+          margin-top: 4rem;
+        }
+        @include respond(tab-port){
+          width: 75%;
+          margin-top: 4rem;
+        }
         &_mapbox {
           width: 100%;
           height: 45.4rem;

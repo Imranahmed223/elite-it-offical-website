@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond(tab-port){
+    display: none;
+  }
   img {
     cursor: pointer;
   }
@@ -55,4 +58,91 @@
   padding-bottom: 20px;
   color: $grdient;
   border-bottom: 3px solid $textprimary;
+}
+
+
+// **************************** Responsive Bar *****************************
+.responsive {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 2rem;
+  // background-color: white;
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding-right: 19rem;
+    &_left{
+      display: flex;
+      align-items: center;
+      &>*:not(:first-child){
+        margin-left: 5rem;
+      }
+    }
+  }
+}
+.resIcon {
+  font-size: 3.5rem;
+  color: $grdient;
+  cursor: pointer;
+}
+
+// **************************** Responsive container Modal *****************************
+
+.responsive_container {
+  background-color: #5c718d71;
+  position: fixed;
+  inset: 0;
+  // width: 100%;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include respond(tab-port) {
+    display: block;
+  }
+  &_content {
+    width: 35%;
+    height: 100vh;
+    background-color: white;
+    padding: 3rem;
+    &_sidebar{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &_top{
+        width: 100%;
+        // background-color: #102780;
+        display: flex;
+        justify-content: center;
+      }
+      &_bottom{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        &>*:not(:first-child){
+          margin-top: 2.5rem;
+        }
+        button{
+          background: none;
+          border: none;
+          text-align: left;
+          font-size: 2rem;
+          cursor: pointer;
+          font-weight: 500;
+          font-family: "Poppins";
+          &:hover{
+            // border-bottom:#102780;
+
+          }
+        }
+      }
+    }
+  }
 }

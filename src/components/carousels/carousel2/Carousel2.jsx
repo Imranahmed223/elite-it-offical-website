@@ -13,6 +13,25 @@ const Carousel2 = () => {
     centerPadding: "60px",
     slidesToShow: 1.5,
     speed: 500,
+    responsive: [
+      
+      {
+        breakpoint: 900,
+        settings: {
+          centerPadding: "70px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
