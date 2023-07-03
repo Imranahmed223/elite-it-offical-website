@@ -16,11 +16,11 @@
   }
   @include respond(tab-port) {
     background-color: red;
-    background-image: none;
+    // background-image: none;
   }
   @include respond(phone) {
     background-color: yellow;
-    background-image: none;
+    // background-image: none;
   }
   &_content {
     width: 75%;
@@ -47,6 +47,10 @@
         font-size: 5.9rem;
         line-height: 88px;
         color: #212427;
+        @include respond(phone){
+          font-size: 3.5rem; 
+          line-height: 55px;
+         }
       }
       h1 {
         font-family: "Archivo Black";
@@ -63,6 +67,10 @@
         }
         @include respond(tab-port){
          font-size: 7rem; 
+        }
+        @include respond(phone){
+         font-size: 4.5rem; 
+         line-height: 70px;
         }
       }
       &_btn {
@@ -259,6 +267,7 @@
           letter-spacing: 0.35em;
           text-transform: uppercase;
           color: #0000c8;
+
         }
         h2 {
           margin-top: 2.6rem;
@@ -267,12 +276,19 @@
           font-size: 5.1rem;
           line-height: 90px;
           color: #fafafa;
+          @include respond(phone){
+            font-size: 4.5rem; 
+            line-height: 60px;
+           }
         }
         h1 {
           font-family: "Archivo Black";
           font-size: 7.7rem;
           line-height: 90px;
           color: #0000c8;
+          @include respond(phone){
+            font-size: 5rem; 
+           }
         }
       }
       &_middle {
@@ -496,6 +512,10 @@
         line-height: 90px;
         text-align: center;
         color: $textprimary;
+        @include respond(phone){
+          font-size: 4.5rem; 
+          line-height: 60px;
+         }
       }
       span {
         font-family: "Archivo Black";
@@ -509,6 +529,10 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        @include respond(phone){
+          font-size: 5rem;
+          line-height: 60px; 
+         }
       }
     }
     &_bottom {
@@ -518,6 +542,9 @@
       // height: 100vh;
       // background-color: goldenrod;
       margin-top: 3rem;
+      @include respond(phone){
+        width: 95%;
+      }
     }
   }
 }
@@ -565,6 +592,10 @@
         line-height: 90px;
         text-align: center;
         color: #fafafa;
+        @include respond(phone){
+          font-size: 4.5rem;
+          line-height: 60px;
+        }
       }
       & > h1 {
         font-family: "Archivo Black";
@@ -574,6 +605,10 @@
         line-height: 82px;
         /* identical to box height, or 106% */
         color: #fafafa;
+        @include respond(phone){
+          font-size: 6rem;
+          line-height: 60px;
+        }
       }
     }
     &_bottom {
@@ -589,6 +624,10 @@
       }
       @include respond(tab-port){
         width: 85%;
+      }
+      @include respond(phone){
+        flex-direction: column;
+        align-items: center;
       }
       &_left {
         & > *:not(:first-child) {
@@ -686,6 +725,9 @@
     padding: 2rem 0rem;
     width: 70%;
     margin: auto;
+    @include respond(phone){
+      width: 90%;
+    }
     &_top {
       p {
         font-family: "Poppins";
@@ -706,6 +748,11 @@
       & > *:not(:first-child) {
         margin-left: 2rem;
       }
+      @include respond(phone){
+        & > *:not(:first-child) {
+          margin-left: .7rem;
+        }
+      }
       @include respond(tab-land) {
         // background-color: red;
         img {
@@ -716,6 +763,12 @@
         // background-color: red;
         img {
           width: 8rem;
+        }
+
+      }
+      @include respond(phone){
+        img{
+          width: 4rem;
         }
       }
     }
@@ -740,6 +793,10 @@
       font-size: 5.8rem;
       line-height: 87px;
       color: #0000c8;
+      @include respond(phone){
+       font-size: 4.5rem;
+       line-height: 57px; 
+      }
     }
     h1 {
       font-family: "Archivo Black";
@@ -751,6 +808,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      @include respond(phone){
+       font-size:6rem;
+       line-height: 60px; 
+      }
     }
   }
 }
@@ -792,6 +853,9 @@
         width: 75%;
         // margin: auto;
       }
+      @include respond(phone){
+       width: 100%; 
+      }
       p {
         font-family: "Poppins";
         font-style: normal;
@@ -804,9 +868,13 @@
     }
     &_right {
       //  width: 47%;
+      width: 45%;
       margin-top: -12rem;
       padding: 1rem 0rem;
       // background-color: palevioletred;
+      @include respond(phone){
+       width: 100%; 
+      }
       @include respond(tab-port){
         margin-top: 1rem;
       }
@@ -824,8 +892,8 @@
         /* Note: backdrop-filter has minimal browser support */
 
         border-radius: 27px;
-        width: 48.8rem;
-        height: 808px;
+        width: 100%;
+        height: 80rem;
         &_content {
           padding-top: 120px;
           width: 85%;
@@ -898,6 +966,9 @@
         @include respond(tab-port){
           width: 75%;
         }
+        @include respond(phone){
+        width: 100%;
+        }
         &_mapbox {
           width: 100%;
           height: 45.4rem;
@@ -946,6 +1017,9 @@
           width: 75%;
           margin-top: 4rem;
         }
+        @include respond(phone){
+        width: 100%;
+        }
         &_mapbox {
           width: 100%;
           height: 45.4rem;
@@ -989,6 +1063,7 @@
 .mailbox_container {
   padding: 1rem 0rem;
   margin-top: 107px;
+  // background-color: red;
   h1 {
     font-family: "Poppins";
     font-style: normal;
@@ -1024,6 +1099,9 @@
     & > *:not(:first-child) {
       margin-left: 2rem;
     }
+    // @include respond(phone){
+    //  flex-direction: column;   
+    // }
     span {
       font-family: "Poppins";
       font-style: normal;

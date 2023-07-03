@@ -6,26 +6,54 @@ import "slick-carousel/slick/slick-theme.css";
 import { CarouselImg1 } from "../../../assets";
 
 const Carousel1 = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 1.5,
-    speed: 500,
-    responsive: [
+  // const settings = {
+  //   className: "center",
+  //   centerMode: true,
+  //   infinite: true,
+  //   centerPadding: "60px",
+  //   slidesToShow: 1.5,
+  //   speed: 500,
+  //   responsive: [
       
+  //     {
+  //       breakpoint: 900,
+  //       settings: {
+  //         centerPadding: "50px",
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         initialSlide: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         initialSlide: 1,
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.6,
+    slidesToScroll: 1,
+    slickNext: true,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 960,
         settings: {
-          centerPadding: "50px",
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
