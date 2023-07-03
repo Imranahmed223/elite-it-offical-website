@@ -1,4 +1,4 @@
-// @import "../../scss/variable";
+@import "../../Sass/mixin";
 @import "../../Sass/variables";
 .editselector {
   margin: 2rem 0rem;
@@ -34,6 +34,10 @@
       width: 32rem;
       z-index: 1000000;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      @include respond(phone){
+        margin-right: 5rem;
+
+      }
       &-content {
         padding: 1rem;
         & > * {

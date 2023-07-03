@@ -65,7 +65,7 @@
 .responsive {
   width: 100%;
   height: auto;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem;
   // background-color: white;
   display: none;
   @include respond(tab-port) {
@@ -81,6 +81,11 @@
       align-items: center;
       &>*:not(:first-child){
         margin-left: 5rem;
+      }
+      @include respond(phone){
+        &>*:not(:first-child){
+          margin-left: 1rem;
+        }
       }
     }
   }

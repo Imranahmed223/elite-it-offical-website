@@ -8,7 +8,7 @@
   //   background-color: aqua;
   background-image: url("../../../assets/servicesAssets//sbg1.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: end;
   background-size: cover;
   &_content {
     width: 75%;
@@ -40,7 +40,7 @@
     //* **************** Section3 **************** *
 
     &_section3 {
-      margin-top: 82px;
+      margin-top: 8rem;
       // background-color: red;
       h1 {
         font-family: "Poppins";

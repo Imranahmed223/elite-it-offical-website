@@ -12,15 +12,17 @@
   //   background-image: url("../../../assets/headerAssets/wline2.svg");
   padding-top: 3rem;
   @include respond(tab-land) {
-    background-color: green;
+    // background-color: green;
   }
   @include respond(tab-port) {
-    background-color: red;
+    // background-color: red;
     // background-image: none;
   }
   @include respond(phone) {
-    background-color: yellow;
+    // background-color: yellow;
     // background-image: none;
+    background-position: end;
+    background-size: cover;
   }
   &_content {
     width: 75%;
@@ -33,6 +35,11 @@
       margin: auto;
     }
     @include respond(tab-port) {
+      // background-color: green;
+      width: 95%;
+      margin: auto;
+    }
+    @include respond(phone) {
       // background-color: green;
       width: 95%;
       margin: auto;
@@ -277,8 +284,8 @@
           line-height: 90px;
           color: #fafafa;
           @include respond(phone){
-            font-size: 4.5rem; 
-            line-height: 60px;
+            font-size: 3.5rem; 
+            line-height: 50px;
            }
         }
         h1 {
@@ -287,7 +294,7 @@
           line-height: 90px;
           color: #0000c8;
           @include respond(phone){
-            font-size: 5rem; 
+            font-size: 4rem; 
            }
         }
       }
@@ -513,7 +520,7 @@
         text-align: center;
         color: $textprimary;
         @include respond(phone){
-          font-size: 4.5rem; 
+          font-size: 4rem; 
           line-height: 60px;
          }
       }
@@ -530,7 +537,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         @include respond(phone){
-          font-size: 5rem;
+          font-size: 4rem;
           line-height: 60px; 
          }
       }
@@ -686,6 +693,9 @@
         line-height: 90px;
         text-align: center;
         color: $textprimary;
+        @include respond(phone){
+          font-size: 4.5rem;
+        }
       }
       span {
         font-family: "Archivo Black";
@@ -699,6 +709,8 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 5.5rem;
+        line-height: 60px;
       }
     }
     &_bottom {
@@ -707,6 +719,9 @@
       padding: 1rem 0rem;
       margin-top: 113px;
       // background-color: palevioletred;
+      @include respond(phone){
+        width: 90%;
+      }
     }
   }
 }
@@ -726,7 +741,7 @@
     width: 70%;
     margin: auto;
     @include respond(phone){
-      width: 90%;
+      width: 95%;
     }
     &_top {
       p {
@@ -809,7 +824,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       @include respond(phone){
-       font-size:6rem;
+       font-size:4.5rem;
        line-height: 60px; 
       }
     }
